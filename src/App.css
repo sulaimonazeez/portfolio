@@ -1,0 +1,294 @@
+
+
+
+
+
+.home {
+  background-image: url('component/FB_IMG_16888956745792951_1688896819875.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  display: block;
+  color: white;
+  position: relative;
+  height: 100vh;
+  top: 0;
+}
+.dev {
+  color: orange;
+  font-size: 5vw;
+}
+.content {
+  color: lightgrey;
+}
+.owner-name {
+  font-size: 9vw;
+}
+.btn-nav {
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 140vw;
+  float: right;
+  left: 80%;
+  font-size: 8vw;
+  height: 17vw;
+  width: 17vw;
+}
+#coner-nav {
+  background-color: black;
+  width: 20vw;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  text-align: center;
+  z-index: 99999999;
+}
+#coner-nav > a {
+  text-decoration: none;
+  color: white;
+  font-size: 7vw;
+  
+}
+#coner-nav > a:hover{
+  color: orange;
+}
+.about {
+  background-color: black;
+}
+.profile-image {
+  width: 90%;
+  height: 90vw;
+  border-radius: 50%;
+  border: solid 4px orange;
+}
+.profile-container{
+  text-align: center;
+  
+}
+.social > a {
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 99999999;
+  border: solid 2px white;
+  background-color: black;
+  width: 10%;
+  height: 5.5vh;
+}
+.showNav {
+  display: block;
+}
+.hideNav {
+  display: none;
+}
+.award-text {
+  position: relative;
+  left: 5vw;
+}
+.facebook {
+  position: relative;
+  top: -12vw;
+  left: -3vw;
+}
+.twitter {
+  position: relative;
+  top: -8vw;
+  left: -2vw;
+}
+.twitter {
+  position: relative;
+  top: -8vw;
+  left: -2vw;
+}
+.instagram {
+  position: relative;
+  top: -6vw;
+  left: -1vw;
+}
+.linked {
+  position: relative;
+  top: -7vw;
+  right: -1vw;
+}
+.whatsapp {
+  position: relative;
+  top: -11vw;
+  right: -2vw;
+}
+.social > a:hover {
+  background-color: orange;
+}
+.span {
+  position: relative;
+  left: 3vw;
+  font-size: 4vw;
+  font-weight: bold;
+  color: lightgrey;
+}
+.award {
+  width: 18%;
+  height: 16vw;
+}
+#font {
+  color: orange;
+  font-size: 4vw;
+}
+#name {
+  margin-top: -3vw;
+}
+.biography-content{
+  color: grey;
+}
+.contact-info > span {
+  position: relative;
+  left: 5vw;
+  color: grey;
+}
+
+#do-container:hover {
+  background-color: orange;
+}
+#do-container {
+  background-color: grey;
+}
+.img-p {
+  height: 80vw;
+}
+.bottom {
+  margin-top: 2vw;
+}
+.bottom > a{
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+}
+.bottom > a:hover{
+  color:orange;
+}
+.bottom > a > i {
+  font-size: 3vw;
+}
+
+#icon {
+  font-size: 8vw;
+  color: white;
+  padding: 8vw;
+  background-color: orange;
+  border-radius: 50%;
+  margin-top: -2vw;
+  margin-left: -7vw;
+  height: 25vw;
+  width:30%;
+  text-align: center;
+  animation: spin 4s linear infinite;
+}
+div > #icon:hover {
+  background-color: black;
+}
+@keyframes spin {
+  from {margin-left: -7vw;}
+  to {margin-left:-5vw;}
+}
+.toper {
+  display:none;
+}
+@media only screen and (min-width: 768px) {
+  #about{
+    margin: 5vw;
+    padding: 5vw;
+  }
+  #icon {
+    font-size: 4vw;
+    height: 8vw;
+    width: 8vw;
+    padding: 2vw;
+    margin-left: -3vw;
+    animation: spin 3s linear infinite;
+  }
+  @keyframes spin {
+   from {margin-left: -3vw;opacity:1}
+   to {margin-left: -2vw;z-index:9999999}
+  }
+  .dark {
+    background-color: black;
+  }
+  .profile-image {
+    width: 40vw;
+    height:40vw;
+  }
+  .social > a {
+    width: 5vw;
+    height: 5vw;
+    padding: 8px;
+    margin-top: 3vw;
+  }
+  #home-section {
+    margin-top: 60vw;
+  }
+  #p{
+    width: 60℅;
+  }
+  .owner-name {
+    font-size: 7vw;
+  }
+  .dev {
+    font-size: 3vw;
+  }
+  .btn-nav {
+    display:none;
+  }
+  #coner-nav {
+    width: 8%;
+    z-index:0;
+  }
+  #coner-nav > a {
+    font-size: 3vw;
+  }
+  .hideNav {
+    display: block;
+  }
+  .cont {
+    width: 65%;
+  }
+  .toper {
+    display: block;
+  }
+  .toper > a{
+    margin: 2vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: white;
+  }
+  .ext > a:hover{
+    background-color: orange;
+    padding: 1vw;
+    
+  }
+  #name {
+    margin-top: 0;
+  }
+  .linker {
+    background-color: orange;
+    padding: 1vw;
+  }
+  .bonz {
+    display: block;
+  }
+  .award {
+    width: 8%;
+    height: 6vw;
+  }
+  .award-text {
+    left: 3vw;
+  }
+  .img-p {
+  height: 40vw;
+}
+.span {
+  font-size: 2vw;
+}
+}

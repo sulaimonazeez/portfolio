@@ -9,6 +9,9 @@ class Project extends React.Component {
     super(props);
     this.state = {};
   }
+  //this comment is nothing just a notice
+  //you can never understand my code except if you are genuine
+  //this portfolio is developed by azeez
   render(){
     return (
       <div className="container-fluid">

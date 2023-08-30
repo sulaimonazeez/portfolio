@@ -14,19 +14,35 @@ import Exp from './exp.js';
 import Project from './project.js';
 import first from './Screenshot_20230712-130440_1689163517268.png';
 import second from './about-me.jpg';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 class About extends React.Component {
   constructor(){
     super();
     this.state = {};
     //about
+    const boxes = document.querySelectorAll(".box");
+    window.addEventListener("scroll", ()=>{
+       const trigger = window.innerHeight / 5 * 4;
+       boxes.forEach((box) =>{
+         const topBox = box.getBoundingClientRect().top;
+         if (topBox < trigger) {
+           box.classList.add("show");
+         }else{
+           box.classList.remove("show");
+         }
+       })
+  })
   }
+ componentDidMount() {
+   AOS.init();
+ }
   render() {
     return (
       <div id="about" className="about"><br/>
-       <div className="profile-container">
-        <img className="profile-image" src={profile} alt="profile" />
-        <div className="text-center social d-flex justify-content-center">
+       <div data-aos="fade-left" className="about profile-container">
+        <img data-aos="fade-up" className="box profile-image" src={profile} alt="profile" />
+        <div className="box text-center social d-flex justify-content-center">
           <a className="facebook" href="https://www.facebook.com/profile.php?id=100094372373251"><i className="fa fa-facebook"></i></a>
            <a className="twitter" href="https://www.facebook.com/profile.php?id=100094372373251"><i className="fa fa-twitter"></i></a>
            <a className="instagram" href="https://instagram.com/olaniyi8973?igshid=MzNlNGNkZWQ4Mg=="><i className="fa fa-instagram"></i></a>
@@ -42,7 +58,7 @@ class About extends React.Component {
        </div>
        <div className="container-fluid"><br/><br/>
            <h1 className="text-light">Biography</h1>
-       <div className="mt-3 biography-content">
+       <div className="box mt-3 biography-content">
            <p style={{color:'lightgrey'}}>
              Experienced full-stack developer with three years of experience in the industry. Seeking to leverage high proficiency in SQL, Python, JavaScript and CSS in a full-time career as a full-stack developer.
            </p>
@@ -60,39 +76,39 @@ class About extends React.Component {
             <h2 className="text-light">What i do?</h2>
           </div>
           <div className="row container-fluid mt-5">
-            <div className="col-sm-12 col-lg-6 col-md-6 col-lg-6 col-xl-6">
-             <Do title="UI/UX management" content="A full-stack developer may work as a programmer who may develop and update both the client and server side of a program. They may also optimize a program's user interface (UI) to best suit customer needs." icon='fa fa-mobile'/><br/>
+            <div data-aos="fade-left" className="box col-sm-12 col-lg-6 col-md-6 col-lg-6 col-xl-6">
+             <Do title="Full-Stack Developer" content="A full-stack developer may work as a programmer who may develop and update both the client and server side of a program. They may also optimize a program's user interface (UI) to best suit customer needs." icon='fa fa-mobile'/><br/>
             </div>
-            <div className="col-sm-12 col-lg-6 col-md-6 col-lg-6 col-xl-6">
+            <div data-aos="fade-right" className="box col-sm-12 col-lg-6 col-md-6 col-lg-6 col-xl-6">
               <Do icon="fa fa-desktop" title="Database development" content="Full-stack developers may help create servers and databases to support the back-end of the software. You may be part of the team that ensures the database's maintenance, security and scalability"/><br/>
               </div>
-              <div className="col-sm-12 col-lg-6 col-md-6 col-lg-6 col-xl-6">
+              <div data-aos="fade-up" className="box col-sm-12 col-lg-6 col-md-6 col-lg-6 col-xl-6">
                <Do icon='fa fa-check-circle' title="Graphic design" content="A full-stack developer may work with graphic designers to develop test application features and appearance. You may also use various models and textures to get various design effects for your platform."/>
                </div>
           </div>
           <div className="mt-5 container-fluid">
             <h2 className="text-light mt-3">Awards</h2>
           </div>
-          <div className="mt-4">
+          <div data-aos="fade-left" className="box mt-4">
              <Award image={A} head="Creative Designer" word="Site of the day"/>
           </div>
-          <div className="">
+          <div data-aos="fade-right" className="box">
              <Award image={B} head="Yearly Best Performer" word="Site of the day"/>
           </div>
-          <div className="">
+          <div data-aos="fade-left" className="box">
              <Award image={C} head="Best Learner Award" word="Site of the day"/>
           </div>
           <div id="exp" className="mt-5 container-fluid">
              <h2 className="text-light">Experience</h2>
           </div>
-          <div className="mt-4 container-fluid">
-            <Exp job="FullStack Developer" part="FullTime" des="Google|remote" date="Feb 2001" company="Google LLC" content="Developed and implemented a new reusable component library, resulting in a 20% reduction in development time and increased consistency across projects.Collaborated with the database team to optimize database queries, resulting in a 30% reduction in query times and improved website performance."/>
+          <div data-aos="fade-up" className="box mt-4 container-fluid">
+            <Exp job="FullStack Developer" part="FullTime" des="Google|remote" date="July 2023" company="Google LLC" content="Developed and implemented a new reusable component library, resulting in a 20% reduction in development time and increased consistency across projects.Collaborated with the database team to optimize database queries, resulting in a 30% reduction in query times and improved website performance."/>
           </div>
-          <div className="mt-5 container-fluid">
-            <Exp job="Visual Designer" part="Part Time" des="Redian IT|remote" date="Feb 2020" company="Redian IT" content="Wrote automated tests for front-end components, resulting in a 50% reduction in bug-related delays and improved overall code quality."/>
+          <div data-aos="fade-up" className="box mt-5 container-fluid">
+            <Exp job="Visual Designer" part="Part Time" des="Redian IT|remote" date="August 2020" company="Redian IT" content="Wrote automated tests for front-end components, resulting in a 50% reduction in bug-related delays and improved overall code quality."/>
           </div>
-          <div className="mt-5 container-fluid">
-            <Exp job="Junior Developer" part="FullTime" des="IB Themes|remote" date="Feb 2001" company="IB Themes" content="Collaborated with the security team to implement data protection solutions, resulting in a 30% reduction in security vulnerabilities.Optimized website performance by implementing lazy loading and reducing page load times by 40%."/>
+          <div data-aos="fade-up" className="box mt-5 container-fluid">
+            <Exp job="Junior Developer" part="FullTime" des="IB Themes|remote" date="Feb 2019" company="IB Themes" content="Collaborated with the security team to implement data protection solutions, resulting in a 30% reduction in security vulnerabilities.Optimized website performance by implementing lazy loading and reducing page load times by 40%."/>
           </div>
           <div className="text-light mt-5 container-fluid">
           <h2>Skills</h2>
@@ -133,7 +149,7 @@ class About extends React.Component {
         <div className="mt-5 container-fluid">
         <h2 className="text-light">Say Something</h2>
            <form className="mt-3" method="post" action="mailto:olaniyisulaimon221@gmail.com">
-             <div className="row">
+             <div data-aos="fade-down" className="row">
               <div className="col-sm-12 col-md-6 col-lg-6 col-xl-12">
                <input style={{color:'lightgrey', backgroundColor:'black'}} className="form-control" type="text" name="fullname" placeholder="fullname"/><br/>
               </div>

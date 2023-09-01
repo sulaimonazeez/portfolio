@@ -40,9 +40,9 @@ class About extends React.Component {
   render() {
     return (
       <div id="about" className="about"><br/>
-       <div data-aos="fade-left" className="about profile-container">
+       <div className="about profile-container">
         <img data-aos="fade-up" className="box profile-image" src={profile} alt="profile" />
-        <div className="box text-center social d-flex justify-content-center">
+        <div data-aos="fade-left" className="box text-center social d-flex justify-content-center">
           <a className="facebook" href="https://www.facebook.com/profile.php?id=100094372373251"><i className="fa fa-facebook"></i></a>
            <a className="twitter" href="https://www.facebook.com/profile.php?id=100094372373251"><i className="fa fa-twitter"></i></a>
            <a className="instagram" href="https://instagram.com/olaniyi8973?igshid=MzNlNGNkZWQ4Mg=="><i className="fa fa-instagram"></i></a>

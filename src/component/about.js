@@ -37,6 +37,7 @@ class About extends React.Component {
  componentDidMount() {
    AOS.init();
  }
+ //for real account
   render() {
     return (
       <div id="about" className="about"><br/>

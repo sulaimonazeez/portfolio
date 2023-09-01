@@ -10,8 +10,6 @@ class Do extends React.Component {
     super(props);
     this.state = {};
     //nothing here
-    //go down
-    //move down
   }
   render(){
     return (

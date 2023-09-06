@@ -21,6 +21,7 @@ class About extends React.Component {
    AOS.init();
  }
  //for real account
+ //app.js
   render() {
     return (
       <div data-aos="fade-up" id="about" className="about"><br/>

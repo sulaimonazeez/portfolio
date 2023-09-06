@@ -38,7 +38,7 @@ class Home extends React.Component {
          <p data-aos="fade-up" className="dev"><strong>{this.state.dev}</strong></p>
          <div className="main-content content">
            <div data-aos="fade-up" className="cont">
-            <p id="p">I design develop services for customers of all sizes, specializing in creating stylish, modern website, web services and online stores.</p>
+            <p className="full-des" id="p">I design develop services for customers of all sizes, specializing in creating stylish, modern website, web services and online stores.</p>
             </div>
             </div>
          </div>

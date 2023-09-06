@@ -1,3 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,700&family=Public+Sans:wght@100&display=swap');
+.full {
+  font-family: 'Public Sans', sans-serif;
+}
+.progress-bar {
+  width: 100%;
+  height: 10px; /* Adjust the height as needed */
+  background-color: orange; 
+}
+.myblog {
+  height: 90vh;
+  position: relative;
+  top: 20px;
+  z-index: 99999999999999;
+  overflow: auto;
+}
+.bt-close {
+  float: right;
+  font-size: 5vw;
+}
+.shift {
+  position: relative;
+  left: 4vw;
+}
+.carousel-content {
+  display: flex;
+  align-items: center; /* Vertically center content within each slide */
+}
+.left-aligned-content {
+  text-align: left; /* Align content to the left within the slide */
+  /* You can also add padding or margin as needed */
+}
+.progress {
+  height: 100%;
+}
+
+/* Define the style for the radio button */
+input[type="radio"] {
+    appearance: none; /* Remove the default appearance */
+    -webkit-appearance: none; /* Remove the default appearance for WebKit browsers */
+    width: 20px; /* Set the width of the custom radio button */
+    height: 20px; /* Set the height of the custom radio button */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid orange; /* Add a border */
+    background-color: white; /* Background color when unchecked */
+    margin-right: 5px; /* Add some spacing between label and button */
+}
+
+/* Define the style for the radio button when it's checked */
+input[type="radio"]:checked {
+    background-color: orange; /* Change the background color when checked */
+}
+
+.team1 {
+  width: 70%;
+  border-radius: 50%;
+}
+.full-w {
+  width: 100%;
+}
+.reduce {
+  width: 50%;
+}
+.cont {
+  font-family: 'Public Sans', sans-serif;
+  position: relative;
+  left: 4vw;
+}
+.full-des {
+  font-family: 'Public Sans', sans-serif;
+  position: relative;
+  left: -3vw;
+}
+.planet {
+  width: 10vw;
+  position: relative;
+  top: 4vw;
+  opacity: 0.4;
+  animation: move 6s linear infinite;
+}
+@keyframes move {
+  0% 100% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(40%);
+  }
+}
 .home {
   background-image: url('component/FB_IMG_16888956745792951_1688896819875.jpg');
   background-repeat: no-repeat;
@@ -5,8 +94,12 @@
   display: block;
   color: white;
   position: relative;
-  height: 100vh;
+  width: 100%;
+  height: 85vh;
   top: 0;
+}
+.full-de {
+  font-family: 'Public Sans', sans-serif;
 }
 .dev {
   color: orange;
@@ -17,6 +110,11 @@
 }
 .owner-name {
   font-size: 9vw;
+  position: relative;
+  left: -1vw;
+}
+.rate {
+  font-size: 8vw;
 }
 .btn-nav {
   background-color: orange;
@@ -31,6 +129,7 @@
   font-size: 8vw;
   height: 17vw;
   width: 17vw;
+  z-index: 999999999999;
 }
 #coner-nav {
   background-color: black;
@@ -40,12 +139,17 @@
   height: 100vh;
   text-align: center;
   z-index: 99999999;
+  left: -2vw;
 }
 #coner-nav > a {
   text-decoration: none;
   color: white;
   font-size: 7vw;
   
+}
+.App {
+  background-color: black;
+  overflow: hidden;
 }
 #coner-nav > a:hover{
   color: orange;
@@ -60,9 +164,24 @@
   border-radius: 50%;
   border: solid 4px orange;
 }
+.project-height > img{
+  width: 50%;
+  height: 40vw;
+}
+.im{
+  height: 30vw;
+  width: 50%;
+}
+.git {
+  position: relative;
+  left: 2vw;
+}
 .profile-container{
   text-align: center;
   
+}
+.social > a > i {
+  margin-top: 2vw;
 }
 .social > a {
   text-decoration: none;
@@ -148,14 +267,21 @@
 #do-container:hover {
   background-color: orange;
 }
+.doing {
+  font-family: 'Public Sans', sans-serif;
+}
 #do-container {
   background-color: grey;
+  margin-left: 4px;
 }
-.img-p {
-  height: 80vw;
+.im {
+  height: 40vw;
 }
 .bottom {
   margin-top: 2vw;
+}
+.project-height {
+  
 }
 .bottom > a{
   text-decoration: none;
@@ -174,20 +300,15 @@
   color: white;
   padding: 8vw;
   background-color: orange;
-  border-radius: 50%;
-  margin-top: -2vw;
-  margin-left: -7vw;
-  height: 25vw;
-  width:30%;
+  border-radius: 2% 10% 100% 10%;
+  margin-top: 0vw;
+  margin-left: -3vw;
+  height: 30vw;
+  width:40%;
   text-align: center;
-  animation: spin 4s linear infinite;
 }
 div > #icon:hover {
   background-color: black;
-}
-@keyframes spin {
-  0% 100% {transform:translateX(2px)}
-  50% {transform: translateX(8px)}
 }
 .toper {
   display:none;
@@ -197,20 +318,22 @@ div > #icon:hover {
     margin: 5vw;
     padding: 5vw;
   }
+  .planet {
+    width: 6vw;
+  }
   #icon {
     font-size: 4vw;
-    height: 8vw;
-    width: 8vw;
+    height: 10vw;
+    width: 10vw;
     padding: 2vw;
-    margin-left: -3vw;
-    animation: spin 5s linear infinite;
+    margin-left: -1vw;
   }
-  @keyframes spin {
-   0% 100% {transform:translateX(2px); opacity:1}
-   50% {transform:translateX(8px); z-index:9999999}
-  }
+  .social > a > i {
+  margin-top: 0;
+   }
   .dark {
     background-color: black;
+    overflow: hidden;
   }
   .profile-image {
     width: 40vw;
@@ -223,7 +346,8 @@ div > #icon:hover {
     margin-top: 3vw;
   }
   #home-section {
-    margin-top: 60vw;
+    position: relative;
+    top: 30%;
   }
   #p{
     width: 60℅;
@@ -235,12 +359,25 @@ div > #icon:hover {
     font-size: 3vw;
   }
   .btn-nav {
-    display:none;
+    display: none;
   }
   #coner-nav {
     width: 8%;
-    z-index:0;
+    z-index:999999999999;
+    left: 0;
+    height: 80vh;
   }
+  
+.bloging > .row > .col-xs-12 > .container-fluid > .container-fluid > .myblog {
+  z-index: 999999999999999999;
+}
+  .full-des {
+  position: relative;
+  left: -4vw;
+}
+.team1 {
+  width: 45%;
+}
   #coner-nav > a {
     font-size: 3vw;
   }
@@ -281,10 +418,37 @@ div > #icon:hover {
   .award-text {
     left: 3vw;
   }
-  .img-p {
-  height: 40vw;
+.img-p {
+  height: 30vw;
 }
 .span {
   font-size: 2vw;
+}
+.home {
+  height: 100vh;
+}
+.rate {
+  font-size: 5vw;
+}
+.bloging {
+  padding: 9vw;
+}
+#exps {
+  padding: 8vw;
+  position: relative;
+  top: 5vw;
+}
+.left-aligned-content {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+.im{
+  width: 60%;
+}
+.myform {
+  width: 60%;
+  position: relative;
+  left: 20%;
 }
 }

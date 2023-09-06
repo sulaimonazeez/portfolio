@@ -1,10 +1,15 @@
-
-
-
-
+import planet from './evrerf.png';
+import Blogs from './blog-1.jpg';
+import Blogss from './blog-2.jpg';
+import Blogsss from './blog-3.jpg'
+import Blogssss from './blog-4.jpg'
+import Blog from './component/blog.js';
 import Home from './component/home.js';
+import Footer from './component/footer.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import React from 'react';
 import About from './component/about.js';
 class App extends React.Component {
@@ -14,6 +19,9 @@ class App extends React.Component {
       isClick:false
     }
   }
+  componentDidMount() {
+   AOS.init();
+ }
   render(){
     return (
       <div className="dark">
@@ -55,6 +63,29 @@ class App extends React.Component {
              </div>
             </div>
           <About />
+         <div id="exps" className="mt-3 container-fluid">
+              <img src={planet} alt="planet" className="planet" />
+              <h2 className="text-light">Blogs</h2>
+          </div>
+        <div className="bloging">
+          <div className="row">
+           <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-4 container-fluid">
+           <Blog contentTitle={"They Now Bade Farewell To The Kind But Unseen People"} content1={"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit."} imaged={Blogs} images={Blogs} date={"20/july, 2023 - by alex"} title={"Five Solid Evidences Attending Design is good for your career Development"} content2={"Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean."}/>
+           </div>
+           <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-5 container-fluid">
+           <Blog contentTitle={"They Now Bade Farewell To The Kind But Unseen People"} content1={"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit."} imaged={Blogss} images={Blogss} date={"20/july, 2023 - by alex"} title={"Five Solid Evidences Attending Design is good for your career Development"} content2={"Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean."}/>
+           </div>
+           <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-5 container-fluid">
+           <Blog contentTitle={"They Now Bade Farewell To The Kind But Unseen People"} content1={"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit."} imaged={Blogsss} images={Blogsss} date={"20/july, 2023 - by alex"} title={"Five Solid Evidences Attending Design is good for your career Development"} content2={"Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean."}/>
+           </div>
+           <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-5 container-fluid">
+           <Blog contentTitle={"They Now Bade Farewell To The Kind But Unseen People"} content1={"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem. Adipiscing veni amet luctus enim sem libero tellus viverra venenatis aliquam. Commodo natoque quam pulvinar elit."} imaged={Blogssss} images={Blogssss} date={"20/july, 2023 - by alex"} title={"Five Solid Evidences Attending Design is good for your career Development"} content2={"Eget aenean tellus venenatis. Donec odio tempus. Felis arcu pretium metus nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean."}/>
+           </div>
+         </div>
+        </div>
+        <div>
+           <Footer />
+        </div>
       </div>
       </div>
     );

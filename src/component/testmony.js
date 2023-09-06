@@ -10,6 +10,8 @@ class Testimony extends React.Component {
       this.setState({status: !this.state.status});
     }, 3000)
   }
+  //some component are style manually
+  //you will need alot of patience to figure out the code 
   change = (e) =>{
     clearInterval(this.myinterval)
    let x = e.target.value;

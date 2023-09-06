@@ -15,7 +15,7 @@ function Footer(){
           <h2 className="text-light text-center">Showcase</h2>
           <p className="text-secondary text-center">most recently work</p>
         </div>
-        <Carousel>
+        <Carousel showThumbs={false}>
           <div className="carousel-content container-fluid">
             <Project link1="https://buzzs.vercel.app" link2="https://github.com/sulaimonazeez/buzz" content="This is music player web app with necessary functionality.This is include filter latest song with the user interactive. I used Reactjs, Roudjango_restframewor & django_restframework" title="Music Cloud Web App" image1={first} />
           </div>
@@ -36,9 +36,9 @@ function Footer(){
         </div>
         <div className="container-fluid">
           <div className="myform text-light">
-              <span><i id="font" class="fa fa-map-marker fs-2" aria-hidden="true"></i><span className="span full-de">154 street kwara, Nigerian</span></span><br/><br/>
-              <span><i id="font" class="fa fa-inbox fs-2" aria-hidden="true"></i><span className="span full-de">olaniyisulaimon221@gmail.com</span></span><br/><br/>
-              <span><i id="font" class="fa fa-phone fs-2" aria-hidden="true"></i><span className="span full-de">+2348080891605</span></span><br/>
+              <span><i id="font" className="fa fa-map-marker fs-2" aria-hidden="true"></i><span className="span full-de">154 street kwara, Nigerian</span></span><br/><br/>
+              <span><i id="font" className="fa fa-inbox fs-2" aria-hidden="true"></i><span className="span full-de">olaniyisulaimon221@gmail.com</span></span><br/><br/>
+              <span><i id="font" className="fa fa-phone fs-2" aria-hidden="true"></i><span className="span full-de">+2348080891605</span></span><br/>
           </div>
         </div>
         <div className="mt-5 container-fluid">

@@ -1,20 +1,13 @@
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,700&family=Public+Sans:wght@100&display=swap');
-
-/* General Styles */
 .full {
   font-family: 'Public Sans', sans-serif;
 }
-
-/* Progress Bar */
 .progress-bar {
   width: 100%;
   height: 10px; /* Adjust the height as needed */
-  background-color: orange;
+  background-color: orange; 
 }
-
-/* Blog Section */
 .myblog {
   height: 90vh;
   position: relative;
@@ -22,74 +15,63 @@
   z-index: 99999999999999;
   overflow: auto;
 }
-
 .bt-close {
   float: right;
   font-size: 5vw;
 }
-
 .shift {
   position: relative;
   left: 4vw;
 }
-
-/* Carousel */
 .carousel-content {
   display: flex;
   align-items: center; /* Vertically center content within each slide */
 }
-
 .left-aligned-content {
   text-align: left; /* Align content to the left within the slide */
   /* You can also add padding or margin as needed */
 }
+.progress {
+  height: 100%;
+}
 
-/* Custom Radio Button */
+/* Define the style for the radio button */
 input[type="radio"] {
-  appearance: none; /* Remove the default appearance */
-  -webkit-appearance: none; /* Remove the default appearance for WebKit browsers */
-  width: 20px; /* Set the width of the custom radio button */
-  height: 20px; /* Set the height of the custom radio button */
-  border-radius: 50%; /* Make it circular */
-  border: 2px solid orange; /* Add a border */
-  background-color: white; /* Background color when unchecked */
-  margin-right: 5px; /* Add some spacing between label and button */
+    appearance: none; /* Remove the default appearance */
+    -webkit-appearance: none; /* Remove the default appearance for WebKit browsers */
+    width: 20px; /* Set the width of the custom radio button */
+    height: 20px; /* Set the height of the custom radio button */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid orange; /* Add a border */
+    background-color: white; /* Background color when unchecked */
+    margin-right: 5px; /* Add some spacing between label and button */
 }
 
-/* Custom Radio Button (Checked State) */
+/* Define the style for the radio button when it's checked */
 input[type="radio"]:checked {
-  background-color: orange; /* Change the background color when checked */
+    background-color: orange; /* Change the background color when checked */
 }
 
-/* Team Section */
 .team1 {
   width: 70%;
   border-radius: 50%;
 }
-
-/* Width Classes */
 .full-w {
   width: 100%;
 }
-
 .reduce {
   width: 50%;
 }
-
-/* Positioning */
 .cont {
   font-family: 'Public Sans', sans-serif;
   position: relative;
   left: 4vw;
 }
-
 .full-des {
   font-family: 'Public Sans', sans-serif;
   position: relative;
   left: -3vw;
 }
-
-/* Planet Animation */
 .planet {
   width: 10vw;
   position: relative;
@@ -97,17 +79,14 @@ input[type="radio"]:checked {
   opacity: 0.4;
   animation: move 6s linear infinite;
 }
-
 @keyframes move {
-  0%, 100% {
+  0% 100% {
     transform: translateY(10%);
   }
   50% {
     transform: translateY(40%);
   }
 }
-
-/* Home Section */
 .home {
   background-image: url('component/FB_IMG_16888956745792951_1688896819875.jpg');
   background-repeat: no-repeat;
@@ -119,20 +98,229 @@ input[type="radio"]:checked {
   height: 85vh;
   top: 0;
 }
+.full-de {
+  font-family: 'Public Sans', sans-serif;
+}
+.dev {
+  color: orange;
+  font-size: 5vw;
+}
+.content {
+  color: lightgrey;
+}
+.owner-name {
+  font-size: 9vw;
+  position: relative;
+  left: -1vw;
+}
+.rate {
+  font-size: 8vw;
+}
+.btn-nav {
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 140vw;
+  float: right;
+  left: 80%;
+  font-size: 8vw;
+  height: 17vw;
+  width: 17vw;
+  z-index: 999999999999;
+}
+#coner-nav {
+  background-color: black;
+  width: 20vw;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  text-align: center;
+  z-index: 99999999;
+  left: -2vw;
+}
+#coner-nav > a {
+  text-decoration: none;
+  color: white;
+  font-size: 7vw;
+  
+}
+.App {
+  background-color: black;
+  overflow: hidden;
+}
+#coner-nav > a:hover{
+  color: orange;
+}
+.about {
+  background-color: black;
+  overflow-x: hidden;
+}
+.profile-image {
+  width: 90%;
+  height: 90vw;
+  border-radius: 50%;
+  border: solid 4px orange;
+}
+.project-height > img{
+  width: 50%;
+  height: 40vw;
+}
+.im{
+  height: 30vw;
+  width: 50%;
+}
+.git {
+  position: relative;
+  left: 2vw;
+}
+.profile-container{
+  text-align: center;
+  
+}
+.social > a > i {
+  margin-top: 2vw;
+}
+.social > a {
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 99999999;
+  border: solid 2px white;
+  background-color: black;
+  width: 10%;
+  height: 5.5vh;
+}
+.showNav {
+  display: block;
+}
+.hideNav {
+  display: none;
+}
+.award-text {
+  position: relative;
+  left: 5vw;
+}
+.facebook {
+  position: relative;
+  top: -12vw;
+  left: -3vw;
+}
+.twitter {
+  position: relative;
+  top: -8vw;
+  left: -2vw;
+}
+.twitter {
+  position: relative;
+  top: -8vw;
+  left: -2vw;
+}
+.instagram {
+  position: relative;
+  top: -6vw;
+  left: -1vw;
+}
+.linked {
+  position: relative;
+  top: -7vw;
+  right: -1vw;
+}
+.whatsapp {
+  position: relative;
+  top: -11vw;
+  right: -2vw;
+}
+.social > a:hover {
+  background-color: orange;
+}
+.span {
+  position: relative;
+  left: 3vw;
+  font-size: 4vw;
+  font-weight: bold;
+  color: lightgrey;
+}
+.award {
+  width: 18%;
+  height: 16vw;
+}
+#font {
+  color: orange;
+  font-size: 4vw;
+}
+#name {
+  margin-top: -3vw;
+}
+.biography-content{
+  color: grey;
+}
+.contact-info > span {
+  position: relative;
+  left: 5vw;
+  color: grey;
+}
 
+#do-container:hover {
+  background-color: orange;
+}
+.doing {
+  font-family: 'Public Sans', sans-serif;
+}
+#do-container {
+  background-color: grey;
+  margin-left: 4px;
+}
+.im {
+  height: 40vw;
+}
+.bottom {
+  margin-top: 2vw;
+}
+.project-height {
+  
+}
+.bottom > a{
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+}
+.bottom > a:hover{
+  color:orange;
+}
+.bottom > a > i {
+  font-size: 3vw;
+}
+
+#icon {
+  font-size: 8vw;
+  color: white;
+  padding: 8vw;
+  background-color: orange;
+  border-radius: 2% 10% 100% 10%;
+  margin-top: 0vw;
+  margin-left: -3vw;
+  height: 30vw;
+  width:40%;
+  text-align: center;
+}
+div > #icon:hover {
+  background-color: black;
+}
+.toper {
+  display:none;
+}
 @media only screen and (min-width: 768px) {
-  /* About Section */
-  #about {
+  #about{
     margin: 5vw;
     padding: 5vw;
   }
-
-  /* Planet Animation */
   .planet {
     width: 6vw;
   }
-
-  /* Icon Styling */
   #icon {
     font-size: 4vw;
     height: 10vw;
@@ -140,186 +328,127 @@ input[type="radio"]:checked {
     padding: 2vw;
     margin-left: -1vw;
   }
-
-  /* Social Icons */
   .social > a > i {
-    margin-top: 0;
-  }
-
-  /* Dark Theme */
+  margin-top: 0;
+   }
   .dark {
     background-color: black;
     overflow: hidden;
   }
-
-  /* Profile Image */
   .profile-image {
     width: 40vw;
-    height: 40vw;
+    height:40vw;
   }
-
-  /* Social Icons (Responsive) */
   .social > a {
     width: 5vw;
     height: 5vw;
     padding: 8px;
     margin-top: 3vw;
   }
-
-  /* Home Section */
   #home-section {
     position: relative;
     top: 30%;
   }
-
-  /* Owner Name */
+  #p{
+    width: 60℅;
+  }
   .owner-name {
     font-size: 7vw;
   }
-
-  /* Developer Text */
   .dev {
     font-size: 3vw;
   }
-
-  /* Hide Navigation Button */
   .btn-nav {
     display: none;
   }
-
-  /* Corner Navigation */
   #coner-nav {
     width: 8%;
-    z-index: 999999999999;
+    z-index:999999999999;
     left: 0;
     height: 80vh;
   }
-
-  /* Z-Index for Blog */
-  .bloging > .row > .col-xs-12 > .container-fluid > .container-fluid > .myblog {
-    z-index: 999999999999999999;
-  }
-
-  /* Adjust Full Description */
+  
+.bloging > .row > .col-xs-12 > .container-fluid > .container-fluid > .myblog {
+  z-index: 999999999999999999;
+}
   .full-des {
-    position: relative;
-    left: -4vw;
-  }
-
-  /* Team Section */
-  .team1 {
-    width: 45%;
-  }
-
-  /* Corner Navigation Link Font Size */
+  position: relative;
+  left: -4vw;
+}
+.team1 {
+  width: 45%;
+}
   #coner-nav > a {
     font-size: 3vw;
   }
-
-  /* Show Hidden Navigation */
   .hideNav {
     display: block;
   }
-
-  /* Content Width */
   .cont {
     width: 65%;
   }
-
-  /* Topper Display */
   .toper {
     display: block;
   }
-
-  /* Topper Link Styling */
-  .toper > a {
+  .toper > a{
     margin: 2vw;
     padding: 1vw;
     text-decoration: none;
     color: white;
   }
-
-  /* External Links Hover */
-  .ext > a:hover {
+  .ext > a:hover{
     background-color: orange;
     padding: 1vw;
+    
   }
-
-  /* Reset Name Margin Top */
   #name {
     margin-top: 0;
   }
-
-  /* Linker Background Color */
   .linker {
     background-color: orange;
     padding: 1vw;
   }
-
-  /* Display Bonz Block */
   .bonz {
     display: block;
   }
-
-  /* Award Size */
   .award {
     width: 8%;
     height: 6vw;
   }
-
-  /* Adjust Award Text Position */
   .award-text {
     left: 3vw;
   }
-
-  /* Image Height in Pixels */
-  .img-p {
-    height: 30vw;
-  }
-
-  /* Span Font Size */
-  .span {
-    font-size: 2vw;
-  }
-
-  /* Adjust Home Section Height */
-  .home {
-    height: 100vh;
-  }
-
-  /* Rate Font Size */
-  .rate {
-    font-size: 5vw;
-  }
-
-  /* Blog Padding */
-  .bloging {
-    padding: 9vw;
-  }
-
-  /* Experience Section Padding and Position */
-  #exps {
-    padding: 8vw;
-    position: relative;
-    top: 5vw;
-  }
-
-  /* Adjust Left-Aligned Content Width and Position */
-  .left-aligned-content {
-    width: 70%;
-    position: relative;
-    left: 15%;
-  }
-
-  /* Image Width (Responsive) */
-  .im {
-    width: 60%;
-  }
-
-  /* Adjust MyForm Width and Position */
-  .myform {
-    width: 60%;
-    position: relative;
-    left: 20%;
-  }
+.img-p {
+  height: 30vw;
+}
+.span {
+  font-size: 2vw;
+}
+.home {
+  height: 100vh;
+}
+.rate {
+  font-size: 5vw;
+}
+.bloging {
+  padding: 9vw;
+}
+#exps {
+  padding: 8vw;
+  position: relative;
+  top: 5vw;
+}
+.left-aligned-content {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+.im{
+  width: 60%;
+}
+.myform {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
 }

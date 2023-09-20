@@ -154,9 +154,9 @@ input[type="radio"]:checked {
 #coner-nav > a:hover{
   color: orange;
 }
-.about {
+.abouts {
   background-color: black;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .profile-image {
   width: 90%;

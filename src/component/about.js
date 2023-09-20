@@ -24,7 +24,7 @@ class About extends React.Component {
   render() {
     return (
       <div data-aos="fade-up" id="about" className="about"><br/>
-       <div data-aos="fade-up" className="about profile-container">
+       <div data-aos="fade-up" className="abouts profile-container">
         <img data-aos="fade-up" className="mt-5 box profile-image" src={profile} alt="profile" />
         <div data-aos="fade-up" className="box text-center social d-flex justify-content-center">
           <a className="facebook" href="https://www.facebook.com/profile.php?id=100094372373251"><i className="fa fa-facebook"></i></a>

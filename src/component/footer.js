@@ -1,6 +1,7 @@
 import React from 'react';
 import planet from '../evrerf.png';
 import first from './Screenshot_20230712-130440_1689163517268.png';
+import ecomerce from './Screenshot_20231018-130921_Chrome.jpg';
 import Trade from "../trading.jpg";
 import { Carousel } from 'react-responsive-carousel';
 import api from '../api.jpg';
@@ -16,6 +17,9 @@ function Footer(){
           <p className="text-secondary text-center">most recently work</p>
         </div>
         <Carousel showThumbs={false}>
+        <div className="carousel-content container-fluid">
+            <Project link1="https://sulaimons.pythonanywhere.com" link2="https://github.com/sulaimonazeez/ecomerce" content="This is a ecomerce website built with django, html, css, Javascript & boostrap this web app have alot of functionality like authentication payment integration with stripe api." title="Ecomerce" image1={ecomerce} />
+          </div>
           <div className="carousel-content container-fluid">
             <Project link1="https://buzzs.vercel.app" link2="https://github.com/sulaimonazeez/buzz" content="This is music player web app with necessary functionality.This is include filter latest song with the user interactive. I used Reactjs, Roudjango_restframewor & django_restframework" title="Music Cloud Web App" image1={first} />
           </div>

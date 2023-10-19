@@ -87,6 +87,9 @@ input[type="radio"]:checked {
     transform: translateY(40%);
   }
 }
+.home > div {
+  z-index: 999999999999;
+}
 .home {
   background-image: url('component/FB_IMG_16888956745792951_1688896819875.jpg');
   background-repeat: no-repeat;

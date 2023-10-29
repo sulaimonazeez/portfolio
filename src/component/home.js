@@ -34,7 +34,7 @@ class Home extends React.Component {
          <div id="home-section" className="container-fluid">
          <div className="container">
          <p data-aos="fade-right" className="fw-bold">Hello, My name is</p>
-         <h1 data-aos="fade-left" className="owner-name"><strong>Sulaimon Azeez</strong></h1>
+         <h1 data-aos="fade-left" className="owner-name">Sulaimon Azeez</h1>
          <p data-aos="fade-up" className="dev"><strong>{this.state.dev}</strong></p>
          <div className="main-content content">
            <div data-aos="fade-up" className="cont">

@@ -28,14 +28,14 @@ class About extends React.Component {
         <img data-aos="fade-up" className="mt-5 box profile-image" src={profile} alt="profile" />
         <div data-aos="fade-up" className="box text-center social d-flex justify-content-center">
           <a className="facebook" href="https://www.facebook.com/profile.php?id=100094372373251"><i className="fa fa-facebook"></i></a>
-           <a className="twitter" href="https://www.facebook.com/profile.php?id=100094372373251"><i className="fa fa-twitter"></i></a>
+           <a className="twitter" href="https://github.com/sulaimonazeez"><i className="fa fa-twitter"></i></a>
            <a className="instagram" href="https://instagram.com/olaniyi8973?igshid=MzNlNGNkZWQ4Mg=="><i className="fa fa-instagram"></i></a>
            <a className="linked" href="https://www.linkedin.com/in/sulaimon-olaniyi-73226223a?trk=contact-info"><i className="fa fa-linkedin"></i></a>
            <a className="whatsapp" href="https://WA.me/+2348080891605"><i className="fa fa-whatsapp"></i></a>
         </div>
         <div className="text-center container-fluid">
            <p style={{color:'lightgrey'}} className="full">FullStack Developer</p>
-           <h1 id="name" className="text-light">Sulaimon Azeez</h1>
+           <h2 id="name" className="text-light">Sulaimon Azeez</h2>
         </div>
         <div className="biography container-fluid">
         </div>

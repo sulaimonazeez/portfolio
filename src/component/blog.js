@@ -15,9 +15,9 @@ class Blog extends React.Component {
         return (
           <div className="fixed-top container-fluid">
             <div className="container-fluid">
-              <div className="container-fluid bg-light myblog rounded">
+              <div className="container bg-light myblog rounded">
                <button onClick={this.showData} className="btn bt-close"><i className="fa fa-close"></i></button>
-               <img src={this.props.imaged} alt="profile" className="w-100"/><br/>
+               <img src={this.props.imaged} alt="profile" className="w-100"/><br/><br/>
                <h2>{this.props.contentTitle}</h2>
                <p className="mt-4">
                  {this.props.content1}

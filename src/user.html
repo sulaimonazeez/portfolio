@@ -1,0 +1,23 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    
+  </head>
+  <body>
+    <script>
+      var img = new Image();
+      img.src = 'blog-2.jpg'; // Replace with the path to your image
+
+      img.onload = function() {
+        var imageWidth = this.width;
+        var imageHeight = this.height;
+    
+        console.log('Image width: ' + imageWidth + 'px');
+        console.log('Image height: ' + imageHeight + 'px');
+        alert(imageHeight)
+        alert(imageWidth)
+     };
+
+    </script>
+  </body>
+</html>

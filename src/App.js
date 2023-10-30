@@ -130,9 +130,7 @@ class App extends Component {
               </a>
             </div>
             <div className="ext toper">
-              <a className="linker" href="/">
-                EN
-              </a>
+              <a className="linker" href="/">EN</a>
               <a href="#fr">FR</a>
             </div>
           </div>

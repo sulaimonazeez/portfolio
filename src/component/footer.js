@@ -40,9 +40,9 @@ function Footer(){
         </div>
         <div className="container-fluid">
           <div className="myform text-light">
-              <span><i id="font" className="fa fa-map-marker fs-2" aria-hidden="true"></i><span className="span full-de">154 street kwara, Nigerian</span></span><br/><br/>
-              <span><i id="font" className="fa fa-inbox fs-2" aria-hidden="true"></i><span className="span full-de">olaniyisulaimon221@gmail.com</span></span><br/><br/>
-              <span><i id="font" className="fa fa-phone fs-2" aria-hidden="true"></i><span className="span full-de">+2348080891605</span></span><br/>
+              <span><i className="font fa fa-map-marker fs-2" aria-hidden="true"></i><span className="span full-de">154 street kwara, Nigerian</span></span><br/><br/>
+              <span><i className="font fa fa-inbox fs-2" aria-hidden="true"></i><span className="span full-de">olaniyisulaimon221@gmail.com</span></span><br/><br/>
+              <span><i className="font fa fa-phone fs-2" aria-hidden="true"></i><span className="span full-de">+2348080891605</span></span><br/>
           </div>
         </div>
         <div className="mt-5 container-fluid">

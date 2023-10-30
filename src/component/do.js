@@ -13,8 +13,8 @@ class Do extends React.Component {
   }
   render(){
     return (
-         <div id="do-container" className="container-fluid bg-dark rounded text-light">
-            <i id="icon" className={this.props.icon}></i>
+         <div className="do-container container-fluid bg-dark rounded text-light">
+            <i className={this.props.icon}></i>
             <div className="p-2 content container-fluid">
               <h5 className="text-light">{this.props.title}</h5>
               <p className="doing text-light">

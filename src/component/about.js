@@ -140,7 +140,7 @@ class About extends React.Component {
              <Skill rate={"70%"} language={"JQuery"} style={{backgroundColor:"orange", width:"70%"}}/>
           </div>
           <div data-aos="fade-left" className="mt-4 container-fluid">
-             <Skill rate={"60%"} language={"Test Driven Development (TDD)"} style={{backgroundColor:"orange", width:"60%"}}/>
+             <Skill rate={"64%"} language={"Test Driven Development (TDD)"} style={{backgroundColor:"orange", width:"64%"}}/>
           </div>
           <div className="mt-4 container-fluid">
              <Skill rate={"60%"} language={"Jest"} style={{backgroundColor:"orange", width:"60%"}}/>

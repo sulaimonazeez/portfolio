@@ -35,7 +35,7 @@ class About extends React.Component {
         </div>
         <div className="text-center container-fluid">
            <p style={{color:'lightgrey'}} className="full">FullStack Developer</p>
-           <h2 id="name" className="text-light">Sulaimon Azeez</h2>
+           <h2 id="name" className="text-light">Sulaimons Azeez</h2>
         </div>
         <div className="biography container-fluid">
         </div>

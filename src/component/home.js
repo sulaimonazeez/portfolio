@@ -1,9 +1,3 @@
-
-
-
-
-
-
 import React from 'react';
 import resume from './resumes.png';
 import '../App.css'
@@ -15,15 +9,7 @@ class Home extends React.Component {
     this.state = {
       dev:'FullStack Developer'
     }
-    let list = ["App Developer", "UI/UX Developer", "FullStack Developer"]
-    let num = -1;
-    setInterval(()=>{
-      if (num <= 2){
-        let xtra = list.shift()
-        list.push(xtra);
-        this.setState({dev: list[0]})
-      }
-    }, 3000)
+    //let list = ["App Developer", "UI/UX Developer", "FullStack Developer"]
   }
   componentDidMount() {
     AOS.init();

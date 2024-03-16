@@ -77,7 +77,7 @@ class About extends React.Component {
           </div>
           <hr />
           <div className="container-fluid mt-5">
-             <img src={planet} alt="planet" className="planet" />
+             <img src={planet} alt="planets" className="planet" />
             <h2 className="text-light">What i do?</h2>
           </div>
           <div className="row container-fluid mt-5">
@@ -92,7 +92,7 @@ class About extends React.Component {
                </div>
           </div>
           <div className="mt-5 container-fluid">
-          <img src={planet} alt="planet" className="planet" />
+          <img src={planet} alt="planetss" className="planet" />
             <h2 className="text-light">Awards</h2>
           </div>
           <div data-aos="fade-left" className="box mt-4">
@@ -105,14 +105,14 @@ class About extends React.Component {
              <Award image={C} head="Best Learner Award" word="Site of the day"/>
           </div>
           <div className="mt-5 container-fluid">
-          <img src={planet} alt="planet" className="planet" />
+          <img src={planet} alt="planeted" className="planet" />
             <h2 data-aos="fade-up" className="text-light">Testimonials.</h2>
           </div>
           <div data-aos="fade-left" className="mt-4 container-fluid">
              <Testimony />
           </div>
            <div className="mt-5 container-fluid">
-          <img src={planet} alt="planet" className="planet" />
+          <img src={planet} alt="planetsss" className="planet" />
             <h2 data-aos="fade-up" className="text-light">Educations. </h2>
           </div>
           <div data-aos="fade-up" className="mt-4 container-fluid">
@@ -152,7 +152,7 @@ class About extends React.Component {
              <Skill rate={"87%"} language={"JavaScript"} style={{backgroundColor:"orange", width:"87%"}}/>
           </div>
           <div id="exp" className="mt-5 container-fluid">
-          <img src={planet} alt="planet" className="planet" />
+          <img src={planet} alt="planetssss" className="planet" />
              <h2 className="text-light">Experience</h2>
           </div>
           <div data-aos="fade-up" className="box mt-4 container-fluid">

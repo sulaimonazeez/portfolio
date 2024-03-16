@@ -6,7 +6,7 @@ import Blogs from './blog-1.jpg';
 import Blogss from './blog-2.jpg';
 import Blogsss from './blog-3.jpg';
 import Blogssss from './blog-4.jpg';
-
+import { Helmet } from 'react-helmet';
 import Blog from './component/blog.js';
 import Home from './component/home.js';
 import Footer from './component/footer.js';
@@ -32,6 +32,14 @@ class Store extends Component {
   render() {
     return (
       <div className="dark">
+      <Helmet>
+        <title>Sulaimon Azeez Portfolio</title>
+        <meta name="description" content="Experienced Full-Stack Developer | Crafting Web and Mobile Solutions | Expert in JavaScript, React, Django | Delivering Seamless User Experiences | Let's Transform Your Digital Vision into Reality." />
+         <meta name="keywords" content="Full-Stack Developer, Web Developer,Front-End Developer, Back-End Developer, Software Engineer, JavaScript Developer, HTML/CSS Developer, Database Developer, Responsive Web Design, API Integration, Web Application Development, Cross-Platform Development, User Interface (UI) Design, User Experience (UX) Design, Agile Development, Version Control (e.g., Git), Problem-Solving, Application Security, Code Optimization, Testing and Debugging, Frameworks (e.g., React, Angular, Node.js), Programming Languages (e.g., JavaScript, Python), DevOps Practices, Server Management, SEO Optimization, Mobile App Development, Databases (e.g., SQL, NoSQL), Continuous Integration/Continuous Deployment (CI/CD)" />
+         <meta name="robots" content="index, follow" />
+         <meta property="og:title" content="Sulaimon Azeez Portfolio" />
+         <meta property="og:description" content="Experienced Full-Stack Developer | Crafting Web and Mobile Solutions | Expert in JavaScript, React, Node.js | Delivering Seamless User Experiences | Let's Transform Your Digital Vision into Reality." /> 
+      </Helmet>
         <div className="App">
           <Home />
           <div className="container-fluid">

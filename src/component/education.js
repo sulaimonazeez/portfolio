@@ -1,13 +1,13 @@
 import React from "react";
 import "../App.css";
 
-function Education(props){
+const Education = ({date, cert, school}) =>{
   return (
     <div className="container-fluid">
       <div>
-        <p className="full-de text-light">{props.date}</p>
-        <h5 className="text-light" >{props.cert}</h5>
-        <p className="text-light full-de">{props.school}</p>
+        <p className="full-de text-light">{date}</p>
+        <h5 className="text-light" >{cert}</h5>
+        <p className="text-light full-de">{school}</p>
       </div>
     </div>
  )

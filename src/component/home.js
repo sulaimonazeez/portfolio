@@ -1,27 +1,21 @@
-import React from 'react';
-import resume from './resumes.png';
+import React, {useEffect} from 'react';
+import resume from './static/resumes.png';
 import '../App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-class Home extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      dev:'FullStack Developer'
-    }
-    //let list = ["App Developer", "UI/UX Developer", "FullStack Developer"]
-  }
-  componentDidMount() {
+
+
+function Home() {
+  useEffect (() =>{
     AOS.init();
-  }
-  render() {
-    return (
-      <div id="home" className="container-fluid home"><br/><br/><br/><br/><br/><br/><br/><br/>
+  }, [])
+  return (
+      <div id="home" className="container-fluid home">
          <div id="home-section" className="container-fluid">
          <div className="container">
          <p data-aos="fade-right" className="fw-bold">Hello, My name is</p>
          <h1 data-aos="fade-left" className="owner-name">Sulaimon Azeez</h1>
-         <p data-aos="fade-up" className="dev"><strong>{this.state.dev}</strong></p>
+         <p data-aos="fade-up" className="dev"><strong>FullStack Developer</strong></p>
          <div className="main-content content">
            <div data-aos="fade-up" className="cont">
             <p className="full-des" id="p">I design develop services for customers of all sizes, specializing in creating stylish, modern website, web services and online stores.</p>
@@ -34,6 +28,6 @@ class Home extends React.Component {
          </div>
       </div>
     );
-  }
 }
+
 export default Home;

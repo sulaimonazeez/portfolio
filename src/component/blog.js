@@ -1,45 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import "../App.css";
-class Blog extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      isShow: false
-    }
+import GenerateBlog from "./showdata.jsx";
+import Modals from "./modalblog.jsx";
+const Blog = ({images, date, title, imaged, contentTitle, content1, content2}) =>{
+  const [trigger, setTriger] = useState(false);
+  const showData = () =>{
+    setTriger(!trigger);
   }
-  showData = () =>{
-    this.setState({isShow: !this.state.isShow});
-  }
-  render(){
-    if (this.state.isShow === true) {
-        return (
-          <div className="fixed-top container-fluid">
-            <div className="container-fluid">
-              <div className="container bg-light myblog rounded">
-               <button onClick={this.showData} className="btn bt-close"><i className="fa fa-close"></i></button>
-               <img src={this.props.imaged} alt="profile" className="w-100"/><br/><br/>
-               <h2>{this.props.contentTitle}</h2>
-               <p className="mt-4">
-                 {this.props.content1}
-               </p>
-               <p>
-                 {this.props.content2}
-               </p>
-              </div>
-            </div>
-          </div>
-        )
-    }else{
-       return (
-         <div className="container-fluid">
-          <div className="" onClick = {this.showData}>
-            <img src={this.props.images} alt="blog" className="rounded w-100" /><br/>
-            <span className="mt-3 text-light full-de">{this.props.date}</span>
-            <h5 className="mt-2 text-light">{this.props.title}</h5>
-        </div>
-      </div>
+  if (trigger){
+    return (
+      <Modals isClick={showData} imaged={imaged} contentTitle={contentTitle} content1={content1} content2={content2} />
     );
-    }
+  } else {
+    return (
+      <GenerateBlog isClick={showData} images={images} date={date} title={title}/>
+    );
   }
+  
 }
 export default Blog;

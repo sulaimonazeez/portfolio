@@ -1,3 +1,5 @@
 User-agent: *
 Disallow:
-Sitemap: https://portfolio-sulaimonazeez.vercel.app/sitemap.xml
+Allow: /
+Sitemap: https://persional-taupe.vercel.app
+

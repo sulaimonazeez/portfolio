@@ -8,7 +8,7 @@ const MySkill = () =>{
     AOS.init();
   }, [])
   return (
-    <div>
+    <div className="shift-x">
       <div className="mt-5 container-fluid">
              <Skill rate={"92%"} language={"HTML5"} style={{backgroundColor:"orange", width:"90%"}}/>
           </div>

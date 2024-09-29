@@ -211,7 +211,22 @@ input[type="radio"]:checked {
 .social > a > i {
   margin-top: 2vw;
 }
-.social > a {
+.social > .facebook {
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  padding: 0.40rem;
+  z-index: 99999999;
+  border: solid 2px white;
+  background-color: black;
+  width: 2.8rem;
+  position: relative;
+  top: -3rem;
+  margin-top: -0.40rem;
+  display: inline-block;
+}
+
+.social > .twitter {
   text-decoration: none;
   color: white;
   border-radius: 50%;
@@ -222,7 +237,56 @@ input[type="radio"]:checked {
   width: 2.8rem;
   position: relative;
   margin-top: -0.40rem;
+  display: inline-block;
+  top: -1.5rem;
 }
+
+.social > .instagram {
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  padding: 0.40rem;
+  z-index: 99999999;
+  border: solid 2px white;
+  background-color: black;
+  width: 2.8rem;
+  position: relative;
+  top: -1.5rem;
+  margin-top: -0.40rem;
+  display: inline-block;
+}
+
+.social > .linked {
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  padding: 0.40rem;
+  z-index: 99999999;
+  border: solid 2px white;
+  background-color: black;
+  width: 2.8rem;
+  position: relative;
+  top: -1.5rem;
+  margin-top: -0.40rem;
+  display: inline-block;
+}
+
+.social > .whatsapp {
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  padding: 0.40rem;
+  z-index: 99999999;
+  border: solid 2px white;
+  background-color: black;
+  width: 2.8rem;
+  position: relative;
+  top: -3rem;
+  margin-top: -0.40rem;
+  display: inline-block;
+}
+
+
 .showNav {
   display: block;
 }
@@ -233,39 +297,7 @@ input[type="radio"]:checked {
   position: relative;
   left: 5vw;
 }
-.facebook {
-  position: relative;
-  top: -11.5vw;
-  left: -3vw;
-}
-.twitter {
-  position: relative;
-  top: -8rem;
-  left: -2vw;
-}
-.twitter {
-  position: relative;
-  top: -8vw;
-  left: -2vw;
-}
-.instagram {
-  position: relative;
-  top: -6vw;
-  left: -1vw;
-}
-.linked {
-  position: relative;
-  top: -7vw;
-  right: -1vw;
-}
-.whatsapp {
-  position: relative;
-  top: -11vw;
-  right: -2vw;
-}
-.social > a:hover {
-  background-color: orange;
-}
+
 .span {
   position: relative;
   left: 3vw;
@@ -369,7 +401,7 @@ div > .icon:hover {
     height:40vw;
   }
   .social > a {
-    margin-top: 2.5rem;
+    margin-top: 2.5%;
   }
   #home-section {
     position: relative;
@@ -397,6 +429,10 @@ div > .icon:hover {
   
 .bloging > .row > .col-xs-12 > .container-fluid > .container-fluid > .myblog {
   z-index: 999999999999999999;
+}
+
+.bloging {
+  max-width: 100rem;
 }
   .full-des {
   position: relative;
@@ -463,9 +499,10 @@ div > .icon:hover {
   padding: 9vw;
 }
 #exps {
-  padding: 8vw;
+  padding: 9vw;
   position: relative;
   top: 5vw;
+  max-width: 300vw;
 }
 .left-aligned-content {
   width: 70%;

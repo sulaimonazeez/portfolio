@@ -17,7 +17,7 @@ function Footer(){
           <p className="text-secondary text-center">most recently work</p>
        </div>
        <Slices />
-        <div id="contact" className="mt-5 container-fluid">
+        <div id="contact" className="mt-5">
           <h2 className="myform text-light">Let's Get in touch</h2>
           <div className="myform ">
              <p className="text-light full-de" tyle={{color:'lightgrey'}}>
@@ -25,27 +25,27 @@ function Footer(){
              </p>
           </div>
         </div>
-        <div className="container-fluid">
+        <div className="info--end">
           <div className="myform text-light">
               <span><i className="font fa fa-map-marker fs-2" aria-hidden="true"></i><span className="span full-de">154 street kwara, Nigerian</span></span><br/><br/>
               <span><i className="font fa fa-inbox fs-2" aria-hidden="true"></i><span className="span full-de">olaniyisulaimon221@gmail.com</span></span><br/><br/>
               <span><i className="font fa fa-phone fs-2" aria-hidden="true"></i><span className="span full-de">+2348080891605</span></span><br/>
           </div>
         </div>
-        <div className="mt-5 container-fluid">
+        <div className="mt-5 form--end">
         <h2 className="myform text-light">Say Something</h2>
-           <form className="myform mt-3" method="post" action="/">
+           <form className="text-light myform mt-3" method="post" action="/">
              <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-6 col-xl-12">
-               <input style={{color:'lightgrey'}} className="form-control" type="text" name="fullname" placeholder="fullname"/><br/>
+               <input style={{color:'lightgrey'}} className="bg-dark text-light form-control" type="text" name="fullname" placeholder="Full Name"/><br/>
               </div>
                <div className="col-sm-12 col-md-6 col-lg-6 col-xl-12">
-               <input style={{color:'lightgrey'}} className="form-control" type="email" name="email" placeholder="Email address"/><br/>
+               <input style={{color:'lightgrey'}} className="bg-dark text-light form-control" type="email" name="email" placeholder="Email address"/><br/>
               </div>
              </div>
-               <input style={{color:'lightgrey'}} className="form-control" type="text" name="subject" placeholder="Subject"/><br/>
-                <textarea style={{color:'lightgrey'}} className="text-light form-control" placeholder="Type comment"></textarea><br/>
-               <a className="btn btn-light p-2" href="mailto:olaniyisulaimon221@gmail.com">Submit</a><br/><br/>
+               <input style={{color:'lightgrey'}} className="bg-dark text-light form-control" type="text" name="subject" placeholder="Subject"/><br/>
+                <textarea style={{color:'lightgrey'}} className="text-light bg-dark placeholder-white form-control" placeholder="Type comment"></textarea><br/>
+               <a className="btn btn-light fw-bolď btn--end p-2" href="mailto:olaniyisulaimon221@gmail.com">Submit</a><br/><br/>
            </form>
         </div>
         <div className="full-de bottom text-center">

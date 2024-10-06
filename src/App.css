@@ -8,7 +8,7 @@
   left: 2%;
 }
 .progress-bar {
-  width: 40.75rem;
+  width: 19rem;
   height: 10px; /* Adjust the height as needed */
   background-color: orange; 
 }
@@ -23,10 +23,7 @@
   float: right;
   font-size: 5vw;
 }
-.shift {
-  position: relative;
-  left: 4vw;
-}
+
 
 #hideLink {
   display: none;
@@ -196,10 +193,6 @@ input[type="radio"]:checked {
   width: 50%;
   height: 40vw;
 }
-.im{
-  height: 30vw;
-  width: 50%;
-}
 .git {
   position: relative;
   left: 2vw;
@@ -297,6 +290,15 @@ input[type="radio"]:checked {
   position: relative;
   left: 5vw;
 }
+.btn {
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.carousel-content a {
+  z-index: 3;
+  position: relative;
+}
 
 .span {
   position: relative;
@@ -335,9 +337,6 @@ input[type="radio"]:checked {
   background-color: grey;
   margin-left: 4px;
 }
-.im {
-  height: 40vw;
-}
 .bottom {
   margin-top: 2vw;
 }
@@ -373,6 +372,28 @@ div > .icon:hover {
 }
 .toper {
   display:none;
+}
+.slide--image{
+  height: 30vw;
+  width: 80%;
+}
+.parent--slide {
+  width: 30vw;
+}
+.demo{
+  position: relative;
+  left: -0.50rem;
+}
+.btn--end {
+  width: 12rem;
+}
+input::placeholder, textarea::placeholder {
+    color: white !important;
+    opacity: 1;
+  }
+.shift {
+  position: relative;
+  left: 4vw;
 }
 @media only screen and (min-width: 768px) {
   #about{
@@ -510,12 +531,24 @@ div > .icon:hover {
   left: 15%;
 }
 .im{
-  width: 60%;
+  width: 70%;
 }
 .myform {
   width: 60%;
   position: relative;
   left: 20%;
 }
-
+.demo{
+  position: relative;
+  left: -0.75rem;
+}
+#contact, .info--end, .form--end{
+  position: relative;
+  left: -1.2rem;
+}
+.progress-bar {
+  width: 40.75rem;
+  height: 10px; /* Adjust the height as needed */
+  background-color: orange; 
+}
 }

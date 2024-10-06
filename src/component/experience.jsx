@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import profile from './static/download (2).png';
+import profile from './static/FB_IMG_16888956745792951.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import "../App.css";

@@ -523,8 +523,8 @@ input::placeholder, textarea::placeholder {
   padding: 9vw;
   max-width: 300vw;
   position: relative;
-  top: 8vw;
-  left: 1.4rem;
+  top: 7rem;
+  left: 1.6rem;
 }
 .left-aligned-content {
   width: 70%;
@@ -554,7 +554,7 @@ input::placeholder, textarea::placeholder {
 }
 .blog--end {
   position: relative;
-  top: -10rem;
+  top: -18rem;
 }
 .slide--image{
   height: 20vw;

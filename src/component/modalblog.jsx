@@ -8,7 +8,7 @@ const Modals = ({isClick, imaged, contentTitle, content1, content2}) =>{
     <div className="fixed-top container-fluid">
      <div className="container-fluid">
         <div className="container bg-light myblog rounded">
-          <button onClick={isClick} className="btn bt-close"><i className="fa fa-close"></i></button>
+          <button onClick={isClick} className="btn bt-close p-4"><i className="fa fa-close"></i></button>
           <LazyLoadImage
             alt="Profile"
             src={imaged}

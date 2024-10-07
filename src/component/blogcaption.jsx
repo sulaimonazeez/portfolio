@@ -9,7 +9,7 @@ const BlogCaption = () =>{
   return (
      <div className="bloging">
             <div className="row">
-              <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-4 container-fluid">
+              <div className="col-xs-12 col-sm-5 col-lg-5 col-xlg-5 mt-4 container-fluid">
                 <Blog
                   contentTitle={
                     'They Now Bade Farewell To The Kind But Unseen People'
@@ -28,7 +28,7 @@ const BlogCaption = () =>{
                   }
                 />
               </div>
-              <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-5 container-fluid">
+              <div className="col-xs-12 col-sm-5 col-lg-5 col-xlg-5 mt-5 container-fluid">
                 <Blog
                   contentTitle={
                     'They Now Bade Farewell To The Kind But Unseen People'
@@ -47,7 +47,7 @@ const BlogCaption = () =>{
                   }
                 />
               </div>
-              <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-5 container-fluid">
+              <div className="col-xs-12 col-sm-5 col-lg-5 col-xlg-5 mt-5 container-fluid">
                 <Blog
                   contentTitle={
                     'They Now Bade Farewell To The Kind But Unseen People'
@@ -66,7 +66,7 @@ const BlogCaption = () =>{
                   }
                 />
               </div>
-              <div className="col-xs-12 col-sm-6 col-lg-6 col-xlg-6 mt-5 container-fluid">
+              <div className="col-xs-12 col-sm-5 col-lg-5 col-xlg-5 mt-5 container-fluid">
                 <Blog
                   contentTitle={
                     'They Now Bade Farewell To The Kind But Unseen People'

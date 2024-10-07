@@ -39,8 +39,8 @@ const Store = () =>{
           <section>
              <About />
           </section>
-          <section>
-            <div id="exps" className="mt-3 container-fluid">
+          <section className="blog--end">
+            <div id="exps" className="container-fluid">
               <LazyLoadImage
                alt="Planet"
                src={planet}

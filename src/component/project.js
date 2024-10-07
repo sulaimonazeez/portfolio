@@ -24,7 +24,7 @@ const Project = ({image1, title, content,link1, link2}) => {
         alt="Description"
         src={image1}
         className="text-center rounded slide--image"
-        style={isMobile ? {width: "90%"} : {width: "60%"}}
+        style={isMobile ? {width: "90%"} : {width: "50%"}}
      />
     </div>
       <div className="left-aligned-content">

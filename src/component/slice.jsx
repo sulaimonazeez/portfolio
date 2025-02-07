@@ -14,6 +14,7 @@ import ChatIcon from "../chat.png";
 const Slices = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  
   // Determine if the device is mobile by checking screen width
   useEffect(() => {
     const handleResize = () => {
@@ -26,6 +27,7 @@ const Slices = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  
   return (
     <Carousel 
       showThumbs={false} 
@@ -113,5 +115,8 @@ const Slices = () => {
     </Carousel>
   );
 };
+
+
+
 
 export default Slices;

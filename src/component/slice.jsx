@@ -9,6 +9,8 @@ import api from './static/api.jpg';
 import "../App.css";
 import modern from "./static/hoobank2.jpg";
 import vtu from "./static/vtu.png";
+import NoRefund from "../norefunds.png";
+import ChatIcon from "../chat.png";
 const Slices = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -40,6 +42,26 @@ const Slices = () => {
           content="Paystar is a VTU webite where you can purchase e.g Airtime, Mobile Data, Tv Subcription, Utility Bills and so on. Feature: Virtual Account Creation, One Tim Payment using paystack, Email Notification. Tech Stack: Django, django_restframework, JQuery, MySQL Database and Boostrap 🔥" 
           title="Paystar VTU Web App" 
           image1={vtu} 
+        />
+      </div>
+
+      <div className="carousel-content container-fluid">
+        <Project 
+          link1="https://norefund.vercel.app/dashboard" 
+          link2="https://github.com/sulaimonazeez/norefund" 
+          content="I Develop and Create Bank UI with Vue.js with full functionality the feature also include sending and recieving payment"
+          title="Bank Ui" 
+          image1={NoRefund} 
+        />
+      </div>
+
+      <div className="carousel-content container-fluid">
+        <Project 
+          link1="https://xchatfronted.vercel.app/login" 
+          link2="https://github.com/sulaimonazeez/chatbackend" 
+          content="I Manage and Develop a Chatting System with Reactjs for my fronted and Python Django for my backend api, I use ajax-based chatting system because free hosting provider like vercel does'nt support websocket."
+          title="ChatIt" 
+          image1={ChatIcon} 
         />
       </div>
       

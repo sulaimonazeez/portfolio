@@ -57,7 +57,7 @@ const Slices = () => {
 
       <div className="carousel-content container-fluid">
         <Project 
-          link1="https://xchatfronted.vercel.app/login" 
+          link1="https://chatfronted.vercel.app/login" 
           link2="https://github.com/sulaimonazeez/chatbackend" 
           content="I Manage and Develop a Chatting System with Reactjs for my fronted and Python Django for my backend api, I use ajax-based chatting system because free hosting provider like vercel does'nt support websocket."
           title="ChatIt" 

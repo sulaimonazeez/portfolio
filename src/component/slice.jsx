@@ -6,6 +6,7 @@ import first from './static/Screenshot_20230712-130440_1689163517268.png';
 import ecomerce from './static/ecommerce.jpg';
 import Trade from "../trading.jpg";
 import api from './static/api.jpg';
+import manage from "./static/management.png";
 import "../App.css";
 import modern from "./static/hoobank2.jpg";
 import vtu from "./static/vtu.png";
@@ -43,6 +44,16 @@ const Slices = () => {
           link2="https://github.com/sulaimonazeez/paystar" 
           content="Paystar is a VTU webite where you can purchase e.g Airtime, Mobile Data, Tv Subcription, Utility Bills and so on. Feature: Virtual Account Creation, One Tim Payment using paystack, Email Notification. Tech Stack: Django, django_restframework, JQuery, MySQL Database and Boostrap 🔥" 
           title="Paystar VTU Web App" 
+          image1={vtu} 
+        />
+      </div>
+
+      <div className="carousel-content container-fluid">
+        <Project 
+          link1="https://management-git-main-sulaimonazeezs-projects.vercel.app" 
+          link2="https://github.com/sulaimonazeez/portfolio" 
+          content="I Created School Management System with Reactjs where Admin can login and student can track their record see message send by their teacher or admin" 
+          title="School Management System" 
           image1={vtu} 
         />
       </div>

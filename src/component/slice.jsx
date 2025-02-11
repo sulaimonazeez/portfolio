@@ -54,7 +54,7 @@ const Slices = () => {
           link2="https://github.com/sulaimonazeez/portfolio" 
           content="I Created School Management System with Reactjs where Admin can login and student can track their record see message send by their teacher or admin" 
           title="School Management System" 
-          image1={vtu} 
+          image1={manage} 
         />
       </div>
 

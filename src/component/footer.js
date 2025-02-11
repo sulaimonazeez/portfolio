@@ -6,7 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 //import second from './about-me.jpg';
 function Footer(){
   return (
-    <div className="container-fluid">
+    <div className="container-fluid responsive">
     <div id="project" className="mb-5 mt-5 container-fluid">
           <LazyLoadImage
              alt="Planet"

@@ -397,7 +397,7 @@ input::placeholder, textarea::placeholder {
 }
 @media only screen and (min-width: 768px) {
   .responsive {
-    margin-top: -10rem;
+    margin-top: -17rem;
   }
   #about{
     margin: 5vw;

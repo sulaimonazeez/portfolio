@@ -12,6 +12,7 @@ import modern from "./static/hoobank2.jpg";
 import vtu from "./static/vtu.png";
 import NoRefund from "../norefunds.png";
 import ChatIcon from "../chat.png";
+import ecomerce from './static/ecomerce.png';
 const Slices = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -51,13 +52,23 @@ const Slices = () => {
       <div className="carousel-content container-fluid">
         <Project 
           link1="https://management-git-main-sulaimonazeezs-projects.vercel.app" 
-          link2="https://github.com/sulaimonazeez/portfolio" 
+          link2="https://github.com/sulaimonazeez/management" 
           content="I Created School Management System with Reactjs where Admin can login and student can track their record see message send by their teacher or admin" 
           title="School Management System" 
           image1={manage} 
         />
       </div>
 
+       <div className="carousel-content container-fluid">
+        <Project 
+          link1="https://eshops.pythonanywhere.com/account/login" 
+          link2="https://github.com/sulaimonazeez/ecomerce" 
+          content="I Develop a E-Commerce website where user can order different stuff with python django" 
+          title="E-Commerce Website" 
+          image1={ecomerce} 
+        />
+      </div>
+      
       <div className="carousel-content container-fluid">
         <Project 
           link1="https://norefund.vercel.app/dashboard" 

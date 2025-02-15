@@ -12,7 +12,7 @@ import modern from "./static/hoobank2.jpg";
 import vtu from "./static/vtu.png";
 import NoRefund from "../norefunds.png";
 import ChatIcon from "../chat.png";
-import ecomerce from './static/ecomerce.png';
+import ecomerces from './static/ecomerce.png';
 const Slices = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -65,7 +65,7 @@ const Slices = () => {
           link2="https://github.com/sulaimonazeez/ecomerce" 
           content="I Develop a E-Commerce website where user can order different stuff with python django" 
           title="E-Commerce Website" 
-          image1={ecomerce} 
+          image1={ecomerces} 
         />
       </div>
       

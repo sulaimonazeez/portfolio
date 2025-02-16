@@ -31,10 +31,6 @@ const Store = () =>{
                 olaniyisulaimon221@gmail.com
               </a>
             </div>
-            <div className="ext toper">
-              <button className="linker">EN</button>
-              <button>FR</button>
-            </div>
           </div>
           <section>
              <About />

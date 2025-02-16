@@ -153,6 +153,7 @@ input[type="radio"]:checked {
   background-color: black !important;
   width: 30vw;
   position: fixed;
+  display:block;
   top: 0;
   height: 100vh;
   text-align: center;
@@ -165,16 +166,18 @@ input[type="radio"]:checked {
   text-decoration: none;
   color: white;
   font-size: 1.5em;
+  display:block;
   margin-top: 4rem;
   z-index: 9999 !important;
 }
 #coner-nav > * {
   margin-top: 3.5rem;
   z-index:9999 !important;
+  display: block;
 }
 .App {
   background-color: black;
-  overflow: hidden;
+  
 }
 #coner-nav > a:hover{
   color: orange;

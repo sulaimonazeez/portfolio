@@ -151,7 +151,7 @@ input[type="radio"]:checked {
 }
 #coner-nav {
   background-color: black;
-  width: 5rem;
+  width: 10rem;
   position: fixed;
   top: 0;
   height: 100vh;

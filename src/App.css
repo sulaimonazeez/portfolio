@@ -151,13 +151,13 @@ input[type="radio"]:checked {
 }
 #coner-nav {
   background-color: black !important;
-  width: 10rem;
+  width: 5rem;
   position: fixed;
   top: 0;
   height: 100vh;
   text-align: center;
-  z-index: 999999999999999999999 !important;
-  left: -2vw;
+  z-index: 999999999999999999999999 !important;
+  left: 0;
   padding: 2rem;
   margin-right: 2rem;
 }
@@ -166,11 +166,11 @@ input[type="radio"]:checked {
   color: white;
   font-size: 1.5em;
   margin-top: 4rem;
-  z-index: 999999999999999999999 !important;
+  z-index: 99999999999999999999999 !important;
 }
 #coner-nav > * {
   margin-top: 3.5rem;
-  z-index:999999999999999999999 !important;
+  z-index:99999999999999999999999 !important;
 }
 .App {
   background-color: black;

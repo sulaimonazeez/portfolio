@@ -21,11 +21,11 @@ const Store = () =>{
     <div className="dark">
         <div className="App">
           <section>
+            <div style="z-index: 9999">
+              <OpenNav />
+            </div>
             <Home />
           </section>
-          <div style="z-index: 9999">
-            <OpenNav />
-          </div>
           <div className="bonz fixed-top mt-4 d-flex justify-content-between">
             <div className="toper">
               <a id="hideLink" href="tel:+2348080891605">+2348080891605</a>

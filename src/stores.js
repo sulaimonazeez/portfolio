@@ -20,17 +20,10 @@ const Store = () =>{
   return (
     <div className="dark">
         <div className="App">
-         
+           <section>
             <Home />
             <OpenNav />
-          <div className="bonz fixed-top mt-4 d-flex justify-content-between">
-            <div className="toper">
-              <a id="hideLink" href="tel:+2348080891605">+2348080891605</a>
-              <a id="hideLink" href="mailto:olaniyisulaimon221@gmail.com">
-                olaniyisulaimon221@gmail.com
-              </a>
-            </div>
-          </div>
+          </section>
           <section>
              <About />
           </section>

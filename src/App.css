@@ -148,15 +148,24 @@ input[type="radio"]:checked {
   z-index: 999999999999;
 }
 #coner-nav {
-  background-color: black;
-  width: 5rem;
   position: fixed;
-  top: 0;
-  height: 100vh;
-  text-align: center;
-  z-index: 9999;
-  left: -2vw;
-  margin-right: 2rem;
+  top: 50px;
+  right: 20px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 9999; /* Ensure it's above everything */
+  transition: transform 0.3s ease-in-out;
+}
+
+.showNav {
+  transform: translateX(0);
+}
+
+.hideNav {
+  transform: translateX(200px);
+  visibility: hidden;
 }
 #coner-nav > a {
   text-decoration: none;
@@ -275,15 +284,7 @@ input[type="radio"]:checked {
   display: inline-block;
 }
 
-.showNav {
-  display: block;
-  z-index:9999 !important;
-   transform: scale(1.1);
-}
-.hideNav {
-  display: none;
-   transition: display 0.3s ease, transform 0.3s ease;
-}
+
 .award-text {
   position: relative;
   left: 5vw;

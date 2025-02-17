@@ -97,9 +97,6 @@ input[type="radio"]:checked {
     transform: translateY(40%);
   }
 }
-.home > div {
-  z-index: 999999999999;
-}
 .shift-x {
   position: relative;
   left: -0.75rem;

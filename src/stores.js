@@ -10,6 +10,7 @@ import BlogCaption from "./component/blogcaption.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import OpenNav from "./component/nav.jsx";
 
 const Store = () =>{
   //const [isClick, setClick] = useState(false);
@@ -19,9 +20,9 @@ const Store = () =>{
   return (
     <div className="dark">
         <div className="App">
-          <section>
+         
             <Home />
-          </section>
+            <OpenNav />
           <div className="bonz fixed-top mt-4 d-flex justify-content-between">
             <div className="toper">
               <a id="hideLink" href="tel:+2348080891605">+2348080891605</a>

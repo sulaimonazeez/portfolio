@@ -146,27 +146,26 @@ input[type="radio"]:checked {
   z-index: 999999999999;
 }
 #coner-nav {
-  background-color: black !important;
-  width: 100%;
+  background-color: black;
+  width: 5rem;
   position: fixed;
   top: 0;
   height: 100vh;
   text-align: center;
-  z-index: 9999 !important;
-  left:0;
-  padding: 2rem;
- 
+  z-index: 999999999999999999999;
+  left: -2vw;
+  margin-right: 2rem;
 }
 #coner-nav > a {
   text-decoration: none;
   color: white;
   font-size: 1.5em;
   margin-top: 4rem;
-  z-index: 9999 !important;
+  z-index: 999999999999999999999;
 }
 #coner-nav > * {
   margin-top: 3.5rem;
-  z-index:9999 !important;
+  z-index:999999999999999999999;
 }
 .App {
   background-color: black;

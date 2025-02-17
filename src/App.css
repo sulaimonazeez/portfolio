@@ -153,7 +153,7 @@ input[type="radio"]:checked {
   height: 100vh;
   text-align: center;
   z-index: 9999 !important;
-  left: -2vw;
+  left: -5vw;
   padding: 2rem;
   margin-right: 2rem;
 }
@@ -278,9 +278,11 @@ input[type="radio"]:checked {
 .showNav {
   display: block;
   z-index:9999 !important;
+   transform: scale(1.1);
 }
 .hideNav {
   display: none;
+   transition: display 0.3s ease, transform 0.3s ease;
 }
 .award-text {
   position: relative;

@@ -4,7 +4,6 @@ import planet from './evrerf.png';
 import Home from './component/home.js';
 import Footer from './component/footer.js';
 import About from './component/about.js';
-import OpenNav from "./component/nav.jsx";
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import BlogCaption from "./component/blogcaption.jsx";
@@ -21,9 +20,6 @@ const Store = () =>{
     <div className="dark">
         <div className="App">
           <section>
-            <div style="z-index: 9999">
-              <OpenNav />
-            </div>
             <Home />
           </section>
           <div className="bonz fixed-top mt-4 d-flex justify-content-between">

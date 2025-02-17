@@ -170,7 +170,7 @@ input[type="radio"]:checked {
 }
 .App {
   background-color: black;
-  overflow: hidden;
+  overflow: overflow;
 }
 #coner-nav > a:hover{
   color: orange;

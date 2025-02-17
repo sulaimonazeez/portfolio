@@ -3,7 +3,7 @@ import resume from './static/sulaimonazeezs.pdf';
 import '../App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import OpenNav from "./nav.jsx";
 
 function Home() {
   useEffect (() =>{
@@ -12,6 +12,9 @@ function Home() {
   return (
       <div style={{position:"relative",zIndez:1}} id="home" className="container-fluid home">
          <div id="home-section" className="container-fluid">
+          <div style="z-index: 9999">
+              <OpenNav />
+          </div>
          <div className="container">
          <p data-aos="fade-right" className="fw-bold">Hello, My name is</p>
          <h1 data-aos="fade-left" className="owner-name">Sulaimon Azeez</h1>

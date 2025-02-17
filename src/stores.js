@@ -23,7 +23,9 @@ const Store = () =>{
           <section>
             <Home />
           </section>
-          <OpenNav />
+          <div style="z-index: 9999">
+            <OpenNav />
+          </div>
           <div className="bonz fixed-top mt-4 d-flex justify-content-between">
             <div className="toper">
               <a id="hideLink" href="tel:+2348080891605">+2348080891605</a>

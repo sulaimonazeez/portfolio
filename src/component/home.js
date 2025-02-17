@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import resume from './static/resumes.png';
+import resume from './static/sulaimonazeezs.pdf';
 import '../App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';

@@ -10,7 +10,7 @@ function Home() {
     AOS.init();
   }, [])
   return (
-      <div id="home" className="container-fluid home">
+      <div style={{position:"relative",zIndez:1}} id="home" className="container-fluid home">
          <div id="home-section" className="container-fluid">
          <div className="container">
          <p data-aos="fade-right" className="fw-bold">Hello, My name is</p>

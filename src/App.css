@@ -44,7 +44,6 @@
 #home-section {
   position: relative;
   top: 5rem;
-  z-index: 1;
 }
 /* Define the style for the radio button */
 input[type="radio"] {

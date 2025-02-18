@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import planet from '../evrerf.png';
 import Slices from "./slice.jsx";\
 import { LazyLoadImage } from 'react-lazy-load-image-component';

@@ -46,15 +46,6 @@ const Slices = () => {
   }, [loadedImages]);
 
   return (
-    <>
-      {loading && (
-        <div className="loading-overlay">
-          <div className="loading-spinner"></div>
-          <p>Loading projects...</p>
-        </div>
-      )}
-
-      {!loading && (
         <Carousel
           showThumbs={false}
           swipeable={!isMobile}
@@ -162,8 +153,6 @@ const Slices = () => {
             />
           </div>
         </Carousel>
-      )}
-    </>
   );
 };
 

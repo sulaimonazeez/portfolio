@@ -21,7 +21,7 @@ const Ecapsule = () => {
           <h2 className="text-light">Experience</h2>
         </div>
         <div data-aos="fade-up" className="box mt-4 container-fluid">
-          <Exp job="FullStack Developer" part="FullTime" des="Google|remote" date="July 2023" company="Google LLC" content="Developed and implemented a new reusable component library, resulting in a 20% reduction in development time and increased consistency across projects. Collaborated with the database team to optimize database queries, resulting in a 30% reduction in query times and improved website performance." />
+          <Exp job="Founder & Developer" part="FullTime" des="VTU Web Platform " date="July 2024" company="PAYSTAR" content="Developed a fully functional Virtual Top-Up (VTU) website that allows users to purchase mobile data and airtime. Implemented automated virtual account number generation for user deposits. Integrated Paystack for one-time payments & recurring card transactions.Ensured secure payment processing with industry best practices. Managed both frontend and backend development." />
         </div>
         <div data-aos="fade-up" className="box mt-5 container-fluid">
           <Exp job="Visual Designer" part="Part Time" des="Redian IT|remote" date="August 2020" company="Redian IT" content="Wrote automated tests for front-end components, resulting in a 50% reduction in bug-related delays and improved overall code quality." />

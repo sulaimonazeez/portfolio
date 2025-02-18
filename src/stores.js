@@ -1,4 +1,4 @@
-import React, {useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import planet from './evrerf.png';
 import Home from './component/home.js';
@@ -12,55 +12,51 @@ import 'aos/dist/aos.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 //import OpenNav from "./component/nav.jsx";
 
-const Store = () =>{
-  //const [isClick, setClick] = useState(false);
+const Store = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time (can be replaced with API calls or actual checks)
-    setTimeout(() => {
+    AOS.init(); // Initialize animations
+
+    // Simulate loading time
+    const timer = setTimeout(() => {
       setLoading(false);
-    }, 2500); // Adjust the delay as needed
+    }, 2500);
+
+    return () => clearTimeout(timer); // Cleanup timeout
   }, []);
-  
-  useEffect(() =>{
-    AOS.init();
-  }, [])
-  
+
   return (
     <div>
-    {loading ? (
+      {loading ? (
         <div className="loading-overlay">
           <div className="loading-spinner"></div>
           <p>Loading your experience...</p>
         </div>
       ) : (
-    <div className="dark">
-        <div className="App">
-           <section>
-            <Home />
-          </section>
-          <section>
-             <About />
-          </section>
-          <section className="blog--end">
-            <div id="exps" className="container-fluid">
-              <LazyLoadImage
-               alt="Planet"
-               src={planet}
-               className="planet"
-              />
-              <h2 className="text-light">Blogs</h2>
-           </div>
-           <BlogCaption />
-          </section>
-          <section>
-            <Footer />
-          </section>
+        <div className="dark">
+          <div className="App">
+            <section>
+              <Home />
+            </section>
+            <section>
+              <About />
+            </section>
+            <section className="blog--end">
+              <div id="exps" className="container-fluid">
+                <LazyLoadImage alt="Planet" src={planet} className="planet" />
+                <h2 className="text-light">Blogs</h2>
+              </div>
+              <BlogCaption />
+            </section>
+            <section>
+              <Footer />
+            </section>
+          </div>
+          <span style={{ display: 'none' }}>learn react</span>
         </div>
-        <span style={{ display: 'none' }}>learn react</span>
-      </div> )}
-  </div>
+      )}
+    </div>
   );
 }
 

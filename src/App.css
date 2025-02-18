@@ -148,24 +148,15 @@ input[type="radio"]:checked {
   z-index: 999999999999;
 }
 #coner-nav {
+  background-color: black;
+  width: 5rem;
   position: fixed;
-  top: 50px;
-  right: 20px;
-  width: 200px;
-  background: rgba(0, 0, 0, 0.9);
-  border-radius: 10px;
-  padding: 15px;
-  z-index: 9999; /* Ensure it's above everything */
-  transition: transform 0.3s ease-in-out;
-}
-
-.showNav {
-  transform: translateX(0);
-}
-
-.hideNav {
-  transform: translateX(200px);
-  visibility: hidden;
+  top: 0;
+  height: 100vh;
+  text-align: center;
+  z-index: 999999999999999999999;
+  left: -2vw;
+  margin-right: 2rem;
 }
 #coner-nav > a {
   text-decoration: none;
@@ -180,9 +171,16 @@ input[type="radio"]:checked {
 }
 .App {
   background-color: black;
+  overflow: hidden;
 }
 #coner-nav > a:hover{
   color: orange;
+}
+.showNav {
+  display: block;
+}
+.hideNav {
+  display: none;
 }
 .abouts {
   background-color: black;

@@ -3,13 +3,14 @@ import resume from './static/sulaimonazeezs.pdf';
 import '../App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import OpenNav from "./nav.jsx";
 function Home() {
   useEffect (() =>{
     AOS.init();
   }, [])
   return (
       <div id="home" className="container-fluid home">
+         <OpenNav />
          <div id="home-section" className="container-fluid">
          <div className="container">
          <p data-aos="fade-right" className="fw-bold">Hello, My name is</p>

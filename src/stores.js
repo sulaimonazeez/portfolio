@@ -10,7 +10,7 @@ import BlogCaption from "./component/blogcaption.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import OpenNav from "./component/nav.jsx";
+//import OpenNav from "./component/nav.jsx";
 
 const Store = () =>{
   //const [isClick, setClick] = useState(false);
@@ -23,7 +23,6 @@ const Store = () =>{
            <section>
             <Home />
           </section>
-          <OpenNav />
           <section>
              <About />
           </section>

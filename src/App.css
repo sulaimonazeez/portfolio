@@ -104,13 +104,13 @@ input[type="radio"]:checked {
 .home {
   background-image: url("component/static/images (2).jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100vh;
   color: white;
   position: relative;
   width: 100%;
   height: 40rem;
   top: 0;
-  z-index:1;
+  display:block;
 }
 
 

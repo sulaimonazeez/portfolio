@@ -22,8 +22,8 @@ const Store = () =>{
         <div className="App">
            <section>
             <Home />
-            <OpenNav />
           </section>
+          <OpenNav />
           <section>
              <About />
           </section>

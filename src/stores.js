@@ -17,7 +17,15 @@ const Store = () =>{
   useEffect(() =>{
     AOS.init();
   }, [])
+  
   return (
+    <div>
+    {loading ? (
+        <div className="loading-overlay">
+          <div className="loading-spinner"></div>
+          <p>Loading your experience...</p>
+        </div>
+      ) : (
     <div className="dark">
         <div className="App">
            <section>
@@ -42,7 +50,8 @@ const Store = () =>{
           </section>
         </div>
         <span style={{ display: 'none' }}>learn react</span>
-      </div>
+      </div> )}
+  </div>
   );
 }
 

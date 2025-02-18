@@ -14,6 +14,15 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Store = () =>{
   //const [isClick, setClick] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time (can be replaced with API calls or actual checks)
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500); // Adjust the delay as needed
+  }, []);
+  
   useEffect(() =>{
     AOS.init();
   }, [])

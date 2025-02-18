@@ -8,7 +8,7 @@ function OpenNav(){
     setClick(!isClick);
   }
   return (
-    <div className="container-fluid" style="z-index: 9999">
+    <div className="container-fluid">
             <button onClick={toggleClick} className="p-2 btn-nav">
               {isClick ? (
                 <i className="fa fa-close"></i>

@@ -1,7 +1,6 @@
 import React from 'react';
 import planet from '../evrerf.png';
 import Slices from "./slice.jsx";\
-import axios from "axios";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 //import second from './about-me.jpg';
@@ -24,14 +23,25 @@ function Footer(){
 
     try {
       // Step 3: Send form data to the backend (Assuming your backend is running at '/api/contact')
-      const response = await axios.post("https://eshops.pythonanywhere.com/email/", formData);
+      const response = await fetch("/api/contact", {
+        method: "POST", // Specify the request method
+        headers: {
+          "Content-Type": "application/json", // Make sure to send JSON data
+        },
+        body: JSON.stringify(formData), // Convert form data to JSON format
+      });
 
-      // If the response is successful, you can clear the form or show a success message
-      alert("Message sent successfully!");
-      setFullname("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      // Step 4: Handle the response
+      if (response.ok) {
+        // If the response is successful, you can clear the form or show a success message
+        alert("Message sent successfully!");
+        setFullname("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      } else {
+        throw new Error("Failed to send message.");
+      }
     } catch (error) {
       console.error("There was an error sending the message:", error);
       alert("An error occurred. Please try again.");

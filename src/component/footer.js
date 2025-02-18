@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import planet from '../evrerf.png';
-import Slices from "./slice.jsx";\
+import Slices from "./slice.jsx";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 //import second from './about-me.jpg';

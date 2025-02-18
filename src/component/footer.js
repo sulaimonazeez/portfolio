@@ -23,7 +23,7 @@ function Footer(){
 
     try {
       // Step 3: Send form data to the backend (Assuming your backend is running at '/api/contact')
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://eshops.pythonanywhere.com/email/", {
         method: "POST", // Specify the request method
         headers: {
           "Content-Type": "application/json", // Make sure to send JSON data

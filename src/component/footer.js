@@ -137,10 +137,10 @@ function Footer() {
         </form>
       </div>
       <div className="full-de bottom text-center">
-        <a href="https://www.facebook.com/profile.php?id=100094372373251"><i style={{fontSize:'1rem'}} className="fa fa-facebook"></i></a>
-        <a href="https://instagram.com/olaniyi8973?igshid=MzNlNGNkZWQ4Mg=="><i style={{fontSize:'1rem'}} className="fa fa-instagram"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100094372373251"><i style={{fontSize:'1rem'}} className="fa fa-twitter"></i></a>
-        <a href="https://WA.me/+2348080891605"><i style={{fontSize:'1rem'}} className="fa fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094372373251"><i style={{fontSize:'0.70rem'}} className="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/olaniyi8973?igshid=MzNlNGNkZWQ4Mg=="><i style={{fontSize:'0.70rem'}} className="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094372373251"><i style={{fontSize:'0.70rem'}} className="fa fa-twitter"></i></a>
+        <a href="https://WA.me/+2348080891605"><i style={{fontSize:'0.70rem'}} className="fa fa-whatsapp"></i></a>
         <p className="text-light">©opyright 2023 - sulaimon</p>
       </div>
     </div>

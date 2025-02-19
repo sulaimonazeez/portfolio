@@ -476,7 +476,7 @@ input::placeholder, textarea::placeholder {
     width: 60%;
   }
   .owner-name {
-    font-size: 7vw;
+    font-size: 3.5rem;
   }
   .dev {
     font-size: 3vw;

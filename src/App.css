@@ -566,6 +566,8 @@ input::placeholder, textarea::placeholder {
 }
 .home {
   height: 50rem;
+  position: relative;
+  left: 3rem;
 }
 .rate {
   font-size: 5vw;

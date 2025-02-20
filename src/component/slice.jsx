@@ -13,6 +13,7 @@ import vtu from "./static/vtu.png";
 import NoRefund from "../norefunds.png";
 import ChatIcon from "../chat.png";
 import ecomerces from './static/ecomerce.png';
+import resume from './static/generator.png';
 const Slices = () => {
   const [isMobile, setIsMobile] = useState(false);
 

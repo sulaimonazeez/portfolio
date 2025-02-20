@@ -42,6 +42,16 @@ const Slices = () => {
     >
       <div className="carousel-content container-fluid">
         <Project 
+          link1="https://pdfgenerators.pythonanywhere.com" 
+          link2="https://github.com/sulaimonazeez/pdf_generator" 
+          content="A sleek and modern resume generator built with Django and ReportLab, designed to help users create beautifully formatted resumes in just a few clicks. With a clean and responsive UI, users can input their details and instantly generate a high-quality PDF resume with professional styling." 
+          title="Resume Builder - PDF Generator" 
+          image1={resume} 
+        />
+      </div>
+      
+      <div className="carousel-content container-fluid">
+        <Project 
           link1="https://paystar.com.ng" 
           link2="https://github.com/sulaimonazeez/paystar" 
           content="Paystar is a VTU webite where you can purchase e.g Airtime, Mobile Data, Tv Subcription, Utility Bills and so on. Feature: Virtual Account Creation, One Tim Payment using paystack, Email Notification. Tech Stack: Django, django_restframework, JQuery, MySQL Database and Boostrap 🔥" 

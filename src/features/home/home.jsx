@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import resume from "../../component/static/sulaimonazeezs.pdf";
+import resume from "../../component/static/Brown & Cream Professional Web Developer Resume.pdf";
 import OpenNav from "../../component/layout/nav.jsx";
 import "./home.css";
 

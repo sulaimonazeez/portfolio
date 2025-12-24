@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,700&family=Public+Sans:wght@100&display=swap');
+.full {
+  font-family: 'Public Sans', sans-serif;
+}
+.l {
+  position: relative;
+  left: 2%;
+}
+.progress-bar {
+  width: 100%;
+  height: 10px; /* Adjust the height as needed */
+  background-color: orange; 
+}
+.myblog {
+  max-height: 80vh;
+  position: relative;
+  top: 20px;
+  z-index: 99999999999999;
+  overflow: auto;
+}
+.bt-close {
+  float: right;
+  font-size: 5vw;
+}
+
+
+#hideLink {
+  display: none;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center; /* Vertically center content within each slide */
+}
+.left-aligned-content {
+  text-align: left; /* Align content to the left within the slide */
+  /* You can also add padding or margin as needed */
+}
+.progress {
+  height: 100%;
+}
+
+#home-section {
+  position: relative;
+  top: 5rem;
+}
+/* Define the style for the radio button */
+input[type="radio"] {
+    appearance: none; /* Remove the default appearance */
+    -webkit-appearance: none; /* Remove the default appearance for WebKit browsers */
+    width: 20px; /* Set the width of the custom radio button */
+    height: 20px; /* Set the height of the custom radio button */
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid orange; /* Add a border */
+    background-color: white; /* Background color when unchecked */
+    margin-right: 5px; /* Add some spacing between label and button */
+}
+
+/* Define the style for the radio button when it's checked */
+input[type="radio"]:checked {
+    background-color: orange; /* Change the background color when checked */
+}
+
+.team1 {
+  width: 70%;
+  border-radius: 50%;
+}
+.full-w {
+  width: 100%;
+}
+.reduce {
+  width: 50%;
+}
+
+.full-des {
+  font-family: 'Public Sans', sans-serif;
+  position: relative;
+  left: -3vw;
+}
+.planet {
+  width: 10vw;
+  position: relative;
+  top: 4vw;
+  opacity: 0.1;
+  animation: move 6s linear infinite;
+}
+@keyframes move {
+  0% 100% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(40%);
+  }
+}
+.shift-x {
+  position: relative;
+  left: -0.75rem;
+}
+
+
+
+.full-de {
+  font-family: 'Public Sans', sans-serif;
+}
+.dev {
+  color: orange;
+  font-size: 1.7rem;
+}
+
+.owner-name {
+  font-size: 3.5rem;
+  position: relative;
+}
+
+/* Full-screen loading overlay */
+.loading-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  text-align: center;
+}
+
+/* Loading animation (spinner) */
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid #ff8c00;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.rate {
+  font-size: 8vw;
+}
+.btn-nav {
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: fixed;
+  top: 140vw;
+  float: right;
+  left: 80%;
+  font-size: 8vw;
+  height: 17vw;
+  width: 17vw;
+  z-index: 999999999999;
+}
+#coner-nav {
+  background-color: black;
+  width: 5rem;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  text-align: center;
+  z-index: 9999 !important;
+  left: -2vw;
+  margin-right: 3rem;
+  opacity: 1;
+  visibility: visible;
+  will-change: transform;
+}
+#coner-nav > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 1rem;
+  padding: 1rem;
+  z-index: 9999 !important;
+}
+#coner-nav > * {
+  margin-top: 3.5rem;
+  z-index:9999 !important;
+}
+.App {
+  background-color: black;
+  overflow: hidden;
+}
+#coner-nav > a:hover{
+  color: orange;
+}
+.showNav {
+  display: block;
+}
+.hideNav {
+  display: none;
+}
+
+.project-height > img{
+  width: 50%;
+  height: 40vw;
+}
+.git {
+  position: relative;
+  left: 2vw;
+}
+
+.award-text {
+  position: relative;
+  left: 5vw;
+}
+.btn {
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+}
+
+.carousel-content a {
+  z-index: 3;
+  position: relative;
+}
+
+.span {
+  position: relative;
+  left: 3vw;
+  font-size: 4vw;
+  font-weight: bold;
+  color: lightgrey;
+}
+.award {
+  width: 18%;
+  height: 16vw;
+}
+.font {
+  color: orange;
+  font-size: 4vw;
+}
+#name {
+  margin-top: -3vw;
+}
+.biography-content{
+  color: grey;
+}
+.contact-info > span {
+  position: relative;
+  left: 5vw;
+  color: grey;
+}
+
+.do-container:hover {
+  background-color: orange;
+}
+.doing {
+  font-family: 'Public Sans', sans-serif;
+}
+.do-container {
+  background-color: grey;
+  margin-left: 4px;
+}
+.bottom {
+  margin-top: 2vw;
+}
+.project-height {
+  
+}
+.bottom > a{
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+}
+.bottom > a:hover{
+  color:orange;
+}
+.bottom > a > i {
+  font-size: 3vw;
+}
+
+.icon {
+  font-size: 8vw;
+  color: white;
+  padding: 8vw;
+  background-color: orange;
+  border-radius: 2% 10% 100% 10%;
+  margin-top: 0vw;
+  margin-left: -3vw;
+  height: 30vw;
+  width:40%;
+  text-align: center;
+}
+div > .icon:hover {
+  background-color: black;
+}
+.toper {
+  display:none;
+}
+.slide--image{
+  height: 30vw;
+  width: 80%;
+}
+.parent--slide {
+  width: 30vw;
+}
+.demo{
+  position: relative;
+  left: -0.50rem;
+}
+.btn--end {
+  width: 12rem;
+}
+input::placeholder, textarea::placeholder {
+    color: white !important;
+    opacity: 1;
+  }
+.shift {
+  position: relative;
+  left: 4vw;
+}
+@media only screen and (min-width: 768px) {
+  .profile-image {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: solid 4px orange;
+}
+  .responsive {
+    margin-top: -20rem;
+  }
+  #about{
+    margin: 5vw;
+    padding: 5vw;
+  }
+  .planet {
+    width: 6vw;
+  }
+  .icon {
+    font-size: 4vw;
+    height: 10vw;
+    width: 10vw;
+    padding: 2vw;
+    margin-left: -1vw;
+  }
+  .social > a > i {
+  margin-top: 0;
+   }
+  .dark {
+    background-color: black;
+    overflow: hidden;
+  }
+  .profile-image {
+    width: 40vw;
+    height:40vw;
+  }
+  .social > a {
+    margin-top: 2.5%;
+  }
+
+  
+  .btn-nav {
+    display: none;
+  }
+  #coner-nav {
+    width: 4rem;
+    z-index:999999999999999;
+    left: 0;
+    padding: 0.5rem;
+    height: 100vh;
+  }
+  
+.bloging > .row > .col-xs-12 > .container-fluid > .container-fluid > .myblog {
+  z-index: 999999999999999999;
+}
+
+.bloging {
+  max-width: 100rem;
+}
+
+.team1 {
+  width: 45%;
+}
+ #coner-nav > a {
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+  }
+
+  #coner-nav > a:hover {
+    background-color: orange;
+    color: white;
+    font-size: 1.7rem;
+    transform: scale(1.1);
+    
+  }
+  .hideNav {
+    display: block;
+  }
+  .cont {
+    width: 65%;
+  }
+  .toper {
+    display: block;
+  }
+  .toper > button{
+    margin: 2vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    border: none;
+  }
+  .ext > button:hover{
+    background-color: orange;
+    padding: 1vw;
+    
+  }
+  #name {
+    margin-top: 0;
+  }
+  .linker {
+    background-color: orange;
+    padding: 1vw;
+  }
+  .bonz {
+    display: block;
+  }
+  .award {
+    width: 8%;
+    height: 6vw;
+  }
+  .award-text {
+    left: 3vw;
+  }
+.img-p {
+  height: 30vw;
+}
+.span {
+  font-size: 2vw;
+}
+.home {
+  height: 50rem;
+  position: relative;
+  left: 3rem;
+}
+.rate {
+  font-size: 5vw;
+}
+.bloging {
+  padding: 9vw;
+}
+#exps {
+  padding: 9vw;
+  max-width: 300vw;
+  position: relative;
+  top: 7rem;
+  left: 1.6rem;
+}
+.left-aligned-content {
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+.im{
+  width: 70%;
+}
+.myform {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+.demo{
+  position: relative;
+  left: -0.75rem;
+}
+#contact, .info--end, .form--end{
+  position: relative;
+  left: -1.2rem;
+}
+.progress-bar {
+  width: 98%;
+  height: 10px; /* Adjust the height as needed */
+  background-color: orange; 
+}
+.blog--end {
+  position: relative;
+  top: -18rem;
+}
+.slide--image{
+  height: 20vw;
+}
+}

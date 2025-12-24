@@ -1,0 +1,83 @@
+/* 🔘 TOGGLE BUTTON */
+.nav-toggle {
+  position: fixed;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 1001;
+  background: black;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: none;
+}
+
+/* 🧭 SIDE NAV (DESKTOP DEFAULT) */
+.side-nav {
+  position: fixed;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 1000;
+}
+
+.side-nav a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid orange;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.side-nav a:hover {
+  background: orange;
+  color: black;
+  transform: scale(1.15);
+}
+
+/* 🌫️ OVERLAY */
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+/* 📱 MOBILE MODE */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .side-nav {
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 260px;
+    background: #000;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    padding-top: 5rem;
+    align-items: center;
+  }
+
+  .side-nav.open {
+    transform: translateX(0);
+  }
+
+  .side-nav a {
+    width: 55px;
+    height: 55px;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,127 @@
+/* 🌑 BACKGROUND */
+.abouts {
+  background-color: black;
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.profile-container {
+  text-align: center;
+}
+
+/* 🌌 ORBIT CONTAINER */
+.profile-orbit {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🧑 PROFILE IMAGE */
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid orange;
+  z-index: 3;
+  box-shadow: 0 0 50px rgba(255, 165, 0, 0.9);
+}
+
+/* 🔥 GLOWING ORBIT RING */
+.orbit-ring {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 165, 0, 0.6);
+  animation: spin 22s linear infinite;
+  box-shadow: 0 0 80px rgba(255, 165, 0, 0.4);
+}
+
+/* ☄️ ICON ORBIT */
+.orbit-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: spinReverse 30s linear infinite;
+}
+
+/* 🌟 ICON BASE */
+.orbit-icons .icon {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 0 25px rgba(255, 165, 0, 0.8);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.orbit-icons .icon:hover {
+  transform: scale(1.4);
+  box-shadow: 0 0 40px rgba(255, 165, 0, 1);
+}
+
+/* 📍 ICON POSITIONS */
+.facebook {
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.twitter {
+  top: 50%;
+  right: 0%;
+  transform: translate(0, -50%);
+}
+
+.instagram {
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.linkedin {
+  top: 50%;
+  left: 0%;
+  transform: translate(0, -50%);
+}
+
+.whatsapp {
+  top: 15%;
+  left: 15%;
+}
+
+/* 🌀 ANIMATIONS */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* 🧾 TEXT */
+.role-text {
+  color: lightgrey;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}

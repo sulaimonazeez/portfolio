@@ -90,11 +90,11 @@ const Slices = () => {
 
       <div className="carousel-content container-fluid">
         <Project 
-          link1="https://management-git-main-sulaimonazeezs-projects.vercel.app" 
+          link1="https://managements-five.vercel.app/" 
           link2="https://github.com/sulaimonazeez/management" 
-          content="I Created School Management System with Reactjs where Admin can login and student can track their record see message send by their teacher or admin" 
+          content="Developed a School Management System using ReactJS, enabling administrators to manage the platform efficiently while allowing students to track their academic records, view messages, and receive updates from teachers or admins." 
           title="School Management System" 
-          image1={manage} 
+          image1={"https://cdn.dribbble.com/userupload/4383731/file/original-f272d51184d619ad894b56baf88b99b2.png?format=webp&resize=1000x750&vertical=center"} 
         />
       </div>
       

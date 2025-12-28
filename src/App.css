@@ -330,6 +330,11 @@ input::placeholder, textarea::placeholder {
     border-radius: 50%;
     border: solid 4px orange;
 }
+.project-card { 
+  width:80%;
+  position: relative;
+  left: 10vw;
+}
   .responsive {
     margin-top: -20rem;
   }
@@ -494,4 +499,142 @@ input::placeholder, textarea::placeholder {
 .slide--image{
   height: 20vw;
 }
+}
+
+/* Glassmorphism card */
+.project-card {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px rgba(255, 165, 0, 0.6), 0 0 50px rgba(255, 255, 255, 0.2);
+}
+
+/* Neon Buttons */
+.glow-btn {
+  background: linear-gradient(
+    135deg,
+    #ff2d55,
+    #ff6a00,
+    #ffb703
+  );
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 14px;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+
+  /* Soft premium glow */
+  box-shadow:
+    0 0 12px rgba(255, 45, 85, 0.6),
+    0 0 28px rgba(255, 106, 0, 0.45),
+    0 10px 30px rgba(0, 0, 0, 0.35);
+
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+/* 🚀 Hover = HOT */
+.glow-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  filter: brightness(1.15);
+
+  box-shadow:
+    0 0 18px rgba(255, 45, 85, 0.9),
+    0 0 45px rgba(255, 106, 0, 0.75),
+    0 15px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* ⚡ Active click feedback */
+.glow-btn:active {
+  transform: scale(0.97);
+  box-shadow:
+    0 0 10px rgba(255, 45, 85, 0.6),
+    0 0 25px rgba(255, 106, 0, 0.5);
+}
+
+.glow-btn-secondary {
+  background: linear-gradient(
+    135deg,
+    #1f2933,
+    #374151,
+    #4b5563
+  );
+  color: #e5e7eb;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  border-radius: 14px;
+  padding: 14px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+
+  /* Subtle dark glow */
+  box-shadow:
+    0 0 10px rgba(148, 163, 184, 0.35),
+    0 0 24px rgba(31, 41, 51, 0.8),
+    0 10px 25px rgba(0, 0, 0, 0.55);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+/* 🧊 Hover = cool power */
+.glow-btn-secondary:hover {
+  transform: translateY(-2px) scale(1.03);
+
+  background: linear-gradient(
+    135deg,
+    #111827,
+    #1f2937,
+    #374151
+  );
+
+  box-shadow:
+    0 0 16px rgba(148, 163, 184, 0.55),
+    0 0 40px rgba(31, 41, 51, 0.95),
+    0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* ⚡ Active */
+.glow-btn-secondary:active {
+  transform: scale(0.97);
+  box-shadow:
+    0 0 8px rgba(148, 163, 184, 0.35),
+    0 0 20px rgba(31, 41, 51, 0.7);
+}
+
+.project-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.project-links a {
+  padding: 0.8rem 1.5rem;
+}
+
+.carousel-hot .carousel .slide {
+  background: transparent;
 }

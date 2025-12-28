@@ -12,6 +12,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
+    "framer-motion": "^12.23.26",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-lazy-load-image-component": "^1.6.3",
@@ -31,6 +32,6 @@
     "vite": "^7.2.4"
   },
   "engines": {
-  "node": ">=22"
-}
+    "node": ">=22"
+  }
 }

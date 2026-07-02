@@ -306,6 +306,6 @@ export const CONTACT_INFO = {
 // Service: Email Services tab. Template: Email Templates tab. Public key: Account tab.
 export const EMAILJS_CONFIG = {
   serviceId: 'service_dptx723',
-  templateId: 'YOUR_TEMPLATE_ID',
+  templateId: 'template_23zagvo',
   publicKey: '_wH9jj3tUOzyVLfu8',
 };

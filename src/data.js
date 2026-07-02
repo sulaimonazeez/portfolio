@@ -305,7 +305,7 @@ export const CONTACT_INFO = {
 // EmailJS config — get these from https://dashboard.emailjs.com
 // Service: Email Services tab. Template: Email Templates tab. Public key: Account tab.
 export const EMAILJS_CONFIG = {
-  serviceId: 'YOUR_SERVICE_ID',
+  serviceId: 'service_dptx723',
   templateId: 'YOUR_TEMPLATE_ID',
-  publicKey: 'YOUR_PUBLIC_KEY',
+  publicKey: '_wH9jj3tUOzyVLfu8',
 };
